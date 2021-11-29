@@ -3,64 +3,72 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour {
-    private Player player;
-    private int _currentHealth;
-    private int _maxHealth;
-    private int _movementSpeed = 750;
-    private int _baseAttackDamage = 5;
-    private int _attackSpeed = 500;
-    private float _attackPeriod = 0.0f;
-    private bool _isAttacking = false;
+  private Player player;
+  private int _currentHealth;
+  private int _maxHealth;
+  private int _movementSpeed = 750;
+  private int _baseAttackDamage = 5;
+  private int _attackSpeed = 500;
+  private float _attackPeriod = 0.0f;
+  private bool _isAttacking = false;
 
-    public bool IsDead => _currentHealth <= 0;
-    public double CurrentHealth => _currentHealth;
-    public double MaxHealth => _maxHealth;
-    public float MovementSpeed => (float)_movementSpeed / 25000;
-    public float AttackInterval => _attackSpeed / 500;
-    public float AttackDamage => _baseAttackDamage;
-    public bool IsAttacking => _isAttacking;
+  public bool IsDead => _currentHealth <= 0;
+  public double CurrentHealth => _currentHealth;
+  public double MaxHealth => _maxHealth;
 
-    public void AttackPlayer() {
-        if (_attackPeriod > AttackInterval) {
-            player.TakeDamage(5);
-            _attackPeriod = 0;
-        }
-        _attackPeriod += UnityEngine.Time.deltaTime;
+  public EnemyHealthBar HealthBar;
+  public float MovementSpeed => (float)_movementSpeed / 25000;
+  public float AttackInterval => _attackSpeed / 500;
+  public float AttackDamage => _baseAttackDamage;
+  public bool IsAttacking => _isAttacking;
+
+  public void AttackPlayer() {
+    if (_attackPeriod > AttackInterval) {
+      player.TakeDamage(5);
+      _attackPeriod = 0;
     }
+    _attackPeriod += UnityEngine.Time.deltaTime;
+  }
 
-    public void TakeDamage(int damage) {
-        _currentHealth -= damage;
+  public void TakeDamage(int damage) {
+    _currentHealth -= damage;
+    HealthBar.SetHealth(_currentHealth, _maxHealth);
+    if (CurrentHealth <= 0) {
+      Destroy(gameObject);
     }
+  }
 
-    private void Start() {
-        _maxHealth = 100 * 10;
-        _currentHealth = _maxHealth;
+  private void Start() {
+    _maxHealth = 100 * 100;
+    _currentHealth = _maxHealth;
 
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-    }
+    HealthBar.SetHealth(_currentHealth, _maxHealth);
 
-    private void Update() {
-        Debug.Log(_currentHealth);
-        if (IsAttacking) AttackPlayer();
-        else Move();
+    player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+  }
 
-        if (IsDead) Destroy(gameObject);
+  private void Update() {
+    Debug.Log(_currentHealth);
+    if (IsAttacking) AttackPlayer();
+    else Move();
 
-        _isAttacking = IsPlayerAhead();
-    }
+    if (IsDead) Destroy(gameObject);
 
-    private bool IsPlayerAhead() {
-        float distance = Vector2.Distance(transform.position, player.transform.position);
+    _isAttacking = IsPlayerAhead();
+  }
 
-        if (distance <= 1.5f) return true;
+  private bool IsPlayerAhead() {
+    float distance = Vector2.Distance(transform.position, player.transform.position);
 
-        return false;
-    }
+    if (distance <= 1.5f) return true;
 
-    private void Move() {
-        Vector2 pos = transform.position;
-        pos.x -= MovementSpeed;
+    return false;
+  }
 
-        transform.position = pos;
-    }
+  private void Move() {
+    Vector2 pos = transform.position;
+    pos.x -= MovementSpeed;
+
+    transform.position = pos;
+  }
 }
