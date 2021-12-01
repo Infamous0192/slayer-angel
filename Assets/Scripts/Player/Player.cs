@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
     private int _maxHealth;
     private int _currentHealth;
-    private float _movementSpeed = 1f;
+    private float _movementSpeed = 3f;
     private int _baseAttackDamage = 50;
     private int _attackSpeed = 500;
     private float _attackPeriod = 0.0f;
