@@ -3,65 +3,62 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
-    private int _maxHealth;
-    private int _currentHealth;
-    private float _movementSpeed = 3f;
-    private int _baseAttackDamage = 50;
-    private int _attackSpeed = 500;
-    private float _attackPeriod = 0.0f;
-    private bool _isAttacking = false;
-
-    public float MovementSpeed => _isAttacking ? 0 : _movementSpeed;
-    public float AttackInterval => _attackSpeed / 500;
-    public int AttackDamage => _baseAttackDamage;
-
-    // HealhBar
-    public int maxHealth = 100;
-    public int currentHealth;
+    #region health
     public HealthBar healthBar;
+    public float baseHealth = 100;
+    private float _currentHealth;
+    private float _maxHealth;
+    public float CurrentHealth => _currentHealth;
+    public float MaxHealth => _maxHealth;
+    #endregion
+
+    #region attack
+    public int baseAttackSpeed = 100;
+    public float baseAttackInterval = 1.7f;
+    public int baseDamage = 25;
+    public float AttackSpeed => baseAttackSpeed;
+    public float AttackInterval => 1 / (AttackSpeed / (baseAttackSpeed * baseAttackInterval));
+    public int AttackDamage => baseDamage;
+    private float attackPeriod = 0;
+    #endregion
+
+    #region behaviour
+    private bool isAttacking = false;
+    #endregion
+
+    #region movement
+    public int baseMovementSpeed = 300;
+    public float MovementSpeed => isAttacking ? 0 : baseMovementSpeed / 100;
+    #endregion
 
     public void TakeDamage(int damage) {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        _currentHealth -= damage;
+        healthBar.SetHealth((int)_currentHealth);
     }
 
-    public void AttackEnemies() {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+    private void Start() {
+        _maxHealth = baseHealth;
+        _currentHealth = _maxHealth;
+        healthBar.SetMaxHealth((int)_currentHealth);
+    }
 
-        if (_attackPeriod > AttackInterval) {
+    private void Update() {
+        if (isAttacking) AttackEnemies();
+
+        isAttacking = CheckEnemy();
+    }
+
+    private void AttackEnemies() {
+        if (attackPeriod > AttackInterval) {
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
             for (int i = 0; i < enemies.Length; i++) {
-                if (Vector2.Distance(transform.position, enemies[i].transform.position) <= 1.5f) {
+                if (Vector2.Distance(transform.position, enemies[i].transform.position) < 2f) {
                     enemies[i].GetComponent<Enemy>().TakeDamage(AttackDamage);
                 }
             }
+            attackPeriod = 0;
         }
-
-        _attackPeriod += UnityEngine.Time.deltaTime;
-    }
-
-    // Start is called before the first frame update
-    void Start() {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-    }
-
-    // Update is called once per frame
-    void Update() {
-        // if (Input.GetKey(KeyCode.RightArrow)) {
-        //     MovementSpeed += 0.2f;
-        // }
-
-        // if (Input.GetKey(KeyCode.LeftArrow)) {
-        //     MovementSpeed -= 0.2f;
-        // }
-
-        if (_isAttacking) AttackEnemies();
-
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            TakeDamage(20);
-        }
-
-        _isAttacking = CheckEnemy();
+        attackPeriod += UnityEngine.Time.deltaTime;
     }
 
     private bool CheckEnemy() {

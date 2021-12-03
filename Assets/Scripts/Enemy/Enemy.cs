@@ -3,72 +3,79 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour {
-  private Player player;
-  private int _currentHealth;
-  private int _maxHealth;
-  private int _movementSpeed = 750;
-  private int _baseAttackDamage = 5;
-  private int _attackSpeed = 500;
-  private float _attackPeriod = 0.0f;
-  private bool _isAttacking = false;
+    private Player player;
 
-  public bool IsDead => _currentHealth <= 0;
-  public double CurrentHealth => _currentHealth;
-  public double MaxHealth => _maxHealth;
+    #region health
+    public EnemyHealthBar HealthBar;
+    public float baseHealth = 50;
+    private float _currentHealth;
+    private float _maxHealth;
+    public float CurrentHealth => _currentHealth;
+    public float MaxHealth => _maxHealth;
+    #endregion
 
-  public EnemyHealthBar HealthBar;
-  public float MovementSpeed => (float)_movementSpeed / 25000;
-  public float AttackInterval => _attackSpeed / 500;
-  public float AttackDamage => _baseAttackDamage;
-  public bool IsAttacking => _isAttacking;
+    #region attack
+    public int baseAttackSpeed = 100;
+    public float baseAttackTime = 3f;
+    public int baseDamage = 25;
+    public float AttackSpeed => baseAttackSpeed;
+    public float AttackInterval => 1 / (AttackSpeed / (100 * baseAttackTime));
+    public int AttackDamage => baseDamage;
+    private float attackPeriod = 0;
+    #endregion
 
-  public void AttackPlayer() {
-    if (_attackPeriod > AttackInterval) {
-      player.TakeDamage(5);
-      _attackPeriod = 0;
+    #region behaviour
+    private bool isAttacking = false;
+    private bool isDead => _currentHealth <= 0;
+    #endregion
+
+    #region movement
+    public float baseMovementSpeed = 300;
+    public float MovementSpeed => isAttacking ? 0 : baseMovementSpeed / 25000;
+    #endregion
+
+    public void TakeDamage(int damage) {
+        _currentHealth -= damage;
+        HealthBar.SetHealth((int)CurrentHealth, (int)MaxHealth);
+        if (CurrentHealth <= 0) {
+            Destroy(gameObject);
+        }
     }
-    _attackPeriod += UnityEngine.Time.deltaTime;
-  }
 
-  public void TakeDamage(int damage) {
-    _currentHealth -= damage;
-    HealthBar.SetHealth(_currentHealth, _maxHealth);
-    if (CurrentHealth <= 0) {
-      Destroy(gameObject);
+    private void Start() {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        _maxHealth = baseHealth;
+        _currentHealth = _maxHealth;
+
+        HealthBar.SetHealth((int)CurrentHealth, (int)MaxHealth);
     }
-  }
 
-  private void Start() {
-    _maxHealth = 100 * 100;
-    _currentHealth = _maxHealth;
+    private void Update() {
+        if (isAttacking) AttackPlayer();
+        else Move();
 
-    HealthBar.SetHealth(_currentHealth, _maxHealth);
+        if (isDead) Destroy(gameObject);
 
-    player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-  }
+        isAttacking = IsPlayerAhead();
+    }
 
-  private void Update() {
-    Debug.Log(_currentHealth);
-    if (IsAttacking) AttackPlayer();
-    else Move();
+    private bool IsPlayerAhead() {
+        float distance = Vector2.Distance(transform.position, player.transform.position);
+        return distance <= 1.5f;
+    }
 
-    if (IsDead) Destroy(gameObject);
+    private void AttackPlayer() {
+        if (attackPeriod > AttackInterval) {
+            player.TakeDamage(AttackDamage);
+            attackPeriod = 0;
+        }
+        attackPeriod += UnityEngine.Time.deltaTime;
+    }
 
-    _isAttacking = IsPlayerAhead();
-  }
+    private void Move() {
+        Vector2 pos = transform.position;
+        pos.x -= MovementSpeed;
 
-  private bool IsPlayerAhead() {
-    float distance = Vector2.Distance(transform.position, player.transform.position);
-
-    if (distance <= 1.5f) return true;
-
-    return false;
-  }
-
-  private void Move() {
-    Vector2 pos = transform.position;
-    pos.x -= MovementSpeed;
-
-    transform.position = pos;
-  }
+        transform.position = pos;
+    }
 }
