@@ -41,9 +41,7 @@ public class Enemy : MonoBehaviour {
     public void TakeDamage(int damage) {
         _currentHealth -= damage;
         HealthBar.SetHealth((int)CurrentHealth, (int)MaxHealth);
-        if (CurrentHealth <= 0) {
-            Destroy(gameObject);
-        }
+        if (CurrentHealth <= 0) Dead();
     }
 
     private void Start() {
@@ -63,8 +61,9 @@ public class Enemy : MonoBehaviour {
         isAttacking = IsPlayerAhead();
     }
 
-    private void OnDestroy() {
+    private void Dead() {
         GameManager.Instance.AddGold(GoldYield);
+        Destroy(gameObject);
     }
 
     private bool IsPlayerAhead() {
