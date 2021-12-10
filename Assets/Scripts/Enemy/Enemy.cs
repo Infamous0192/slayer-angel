@@ -34,6 +34,10 @@ public class Enemy : MonoBehaviour {
     public float MovementSpeed => isAttacking ? 0 : baseMovementSpeed;
     #endregion
 
+    #region reward
+    public double GoldYield = 300;
+    #endregion
+
     public void TakeDamage(int damage) {
         _currentHealth -= damage;
         HealthBar.SetHealth((int)CurrentHealth, (int)MaxHealth);
@@ -57,6 +61,10 @@ public class Enemy : MonoBehaviour {
         if (isDead) Destroy(gameObject);
 
         isAttacking = IsPlayerAhead();
+    }
+
+    private void OnDestroy() {
+        GameManager.Instance.AddGold(GoldYield);
     }
 
     private bool IsPlayerAhead() {
