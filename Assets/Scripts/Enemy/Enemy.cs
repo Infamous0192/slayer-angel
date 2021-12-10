@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour {
 
     #region movement
     public float baseMovementSpeed = 300;
-    public float MovementSpeed => isAttacking ? 0 : baseMovementSpeed / 25000;
+    public float MovementSpeed => isAttacking ? 0 : baseMovementSpeed;
     #endregion
 
     public void TakeDamage(int damage) {
@@ -74,7 +74,7 @@ public class Enemy : MonoBehaviour {
 
     private void Move() {
         Vector2 pos = transform.position;
-        pos.x -= MovementSpeed;
+        pos.x -= (MovementSpeed + player.MovementSpeed) / 35000;
 
         transform.position = pos;
     }

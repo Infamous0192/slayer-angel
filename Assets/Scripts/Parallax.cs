@@ -21,7 +21,7 @@ public class Parallax : MonoBehaviour {
 
     // Update is called once per frame
     void FixedUpdate() {
-        float realVelocity = player.MovementSpeed / depth;
+        float realVelocity = player.MovementSpeed / (depth * 100);
         Vector2 pos = transform.position;
 
         pos.x -= realVelocity * Time.fixedDeltaTime;

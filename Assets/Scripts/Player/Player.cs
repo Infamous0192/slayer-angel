@@ -28,7 +28,7 @@ public class Player : MonoBehaviour {
 
     #region movement
     public int baseMovementSpeed = 300;
-    public float MovementSpeed => isAttacking ? 0 : baseMovementSpeed / 100;
+    public float MovementSpeed => isAttacking ? 0 : baseMovementSpeed;
     #endregion
 
     public void TakeDamage(int damage) {
