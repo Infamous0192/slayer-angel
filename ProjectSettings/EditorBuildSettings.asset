@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Starship.unity
     guid: 25997701380abce418082f085d461bde
   - enabled: 1
-    path: Assets/Scenes/UIModeRunner.unity
+    path: Assets/Scenes/Stage 1-1.unity
     guid: 32ed5a4ca8ab3eb4bb3f555c42ef0a12
   - enabled: 1
     path: Assets/Scenes/Enemy.unity
