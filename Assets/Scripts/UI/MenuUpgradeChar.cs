@@ -10,11 +10,14 @@ public class MenuUpgradeChar : MonoBehaviour {
 
   public Button btnSkiil;
 
+
   public GameObject kontenEquip;
   public GameObject kontenSkill;
+  public GameObject Menu;
 
-  public GameObject footerEquip;
-  public GameObject footerSkill;
+  // public Sprite redSprite;
+  // public Sprite greenSprite;
+
 
   // Start is called before the first frame update
   void Start() {
@@ -27,23 +30,45 @@ public class MenuUpgradeChar : MonoBehaviour {
     btnSkiil.onClick.AddListener(() => {
       transformBtn(false);
     });
+
+    // btnEquipment = this.gameObject.GetComponent<Button>();
+    // btnSkiil = this.gameObject.GetComponent<Button>();
+
   }
 
   public void transformBtn(bool isActive) {
     if (isActive == true) {
-      btnEquipment.image.rectTransform.sizeDelta = new Vector2(320, 120);
-      btnSkiil.image.rectTransform.sizeDelta = new Vector2(280, 80);
+      btnEquipment.image.rectTransform.sizeDelta = new Vector2(320, 80);
+      btnSkiil.image.rectTransform.sizeDelta = new Vector2(253, 58);
       kontenEquip.gameObject.SetActive(true);
       kontenSkill.gameObject.SetActive(false);
-      footerEquip.gameObject.SetActive(true);
-      footerSkill.gameObject.SetActive(false);
+
+
+      // SpriteState spriteState = new SpriteState();
+      // SpriteState spriteState2 = new SpriteState();
+
+      // spriteState2 = btnSkiil.spriteState;
+
+      // if ((btnEquipment != null) && (redSprite != null) && (greenSprite != null)) {
+      //   SpriteState spriteState = new SpriteState();
+      //   spriteState = btnEquipment.spriteState;
+
+
+      //   if (enabled) {
+      //     spriteState.pressedSprite = redSprite;
+      //   } else {
+      //     spriteState.pressedSprite = greenSprite;
+      //   }
+      //   btnEquipment.spriteState = spriteState;
+
+      // }
+
     } else {
-      btnSkiil.image.rectTransform.sizeDelta = new Vector2(320, 120);
-      btnEquipment.image.rectTransform.sizeDelta = new Vector2(280, 80);
+      btnSkiil.image.rectTransform.sizeDelta = new Vector2(320, 80);
+      btnEquipment.image.rectTransform.sizeDelta = new Vector2(253, 58);
       kontenEquip.gameObject.SetActive(false);
       kontenSkill.gameObject.SetActive(true);
-      footerEquip.gameObject.SetActive(false);
-      footerSkill.gameObject.SetActive(true);
+
     }
   }
 
