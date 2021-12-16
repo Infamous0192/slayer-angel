@@ -68,7 +68,7 @@ public class Enemy : MonoBehaviour {
 
     private bool IsPlayerAhead() {
         float distance = Vector2.Distance(transform.position, player.transform.position);
-        return distance <= 1.5f;
+        return distance <= 1f;
     }
 
     private void AttackPlayer() {

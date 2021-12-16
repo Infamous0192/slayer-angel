@@ -477,7 +477,8 @@ MonoBehaviour:
   baseAttackSpeed: 100
   baseAttackTime: 2
   baseDamage: 5
-  baseMovementSpeed: 300
+  baseMovementSpeed: 250
+  GoldYield: 300
 --- !u!1 &3277021707743697269
 GameObject:
   m_ObjectHideFlags: 0
