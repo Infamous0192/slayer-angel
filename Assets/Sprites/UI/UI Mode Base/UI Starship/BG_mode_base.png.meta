@@ -1,22 +1,31 @@
 fileFormatVersion: 2
-guid: 0b502c9b695e2d046b684f8334898660
+guid: db762ad2d83b1164dadb3eaeed3e7c8a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 937847267491637572
-    second: spritesheetUImodeBase_0
+      213: 8265652564547551558
+    second: BG_mode_base_0
   - first:
-      213: 2290737655617617831
-    second: spritesheetUImodeBase_1
+      213: -7577715140849280453
+    second: BG_mode_base_1
   - first:
-      213: 8346330725708159664
-    second: spritesheetUImodeBase_2
+      213: -5702310297698785041
+    second: BG_mode_base_2
   - first:
-      213: -7249394097557390677
-    second: spritesheetUImodeBase_3
+      213: -5500294572573842802
+    second: BG_mode_base_3
   - first:
-      213: 5826192642982622312
-    second: spritesheetUImodeBase_4
+      213: 3320052140222884321
+    second: BG_mode_base_4
+  - first:
+      213: -4359176039662434034
+    second: BG_mode_base_5
+  - first:
+      213: 8687756883959927279
+    second: BG_mode_base_6
+  - first:
+      213: 7493298714128227907
+    second: BG_mode_base_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,18 +112,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -130,106 +127,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheetUImodeBase_0
+      name: BG_mode_base_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 712
+        y: 513
         width: 1920
-        height: 1080
+        height: 1079
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 449e860fe17e30d00800000000000000
-      internalID: 937847267491637572
+      spriteID: 64147a2d63f75b270800000000000000
+      internalID: 8265652564547551558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheetUImodeBase_1
+      name: BG_mode_base_1
       rect:
         serializedVersion: 2
-        x: 28
-        y: 129
-        width: 541
-        height: 471
+        x: 2059
+        y: 1539
+        width: 492
+        height: 444
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7aff2bcc2c55acf10800000000000000
-      internalID: 2290737655617617831
+      spriteID: b3a54945a3c86d690800000000000000
+      internalID: -7577715140849280453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheetUImodeBase_2
+      name: BG_mode_base_2
       rect:
         serializedVersion: 2
-        x: 644
-        y: 404
-        width: 685
-        height: 222
+        x: 2559
+        y: 1535
+        width: 233
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ba53c3039f14d370800000000000000
-      internalID: 8346330725708159664
+      spriteID: fe8ac921ff25dd0b0800000000000000
+      internalID: -5702310297698785041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheetUImodeBase_3
+      name: BG_mode_base_3
       rect:
         serializedVersion: 2
-        x: 1455
-        y: 271
-        width: 137
-        height: 326
+        x: 2053
+        y: 1029
+        width: 504
+        height: 403
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baa374a2a7af46b90800000000000000
-      internalID: -7249394097557390677
+      spriteID: e822ab16a370ba3b0800000000000000
+      internalID: -5500294572573842802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheetUImodeBase_4
+      name: BG_mode_base_4
       rect:
         serializedVersion: 2
-        x: 663
-        y: 6
-        width: 458
-        height: 372
+        x: 2558
+        y: 1023
+        width: 86
+        height: 94
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86439fd175bcad050800000000000000
-      internalID: 5826192642982622312
+      spriteID: 1e9a2c5c4d1331e20800000000000000
+      internalID: 3320052140222884321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_mode_base_5
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 583
+        width: 147
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09c682ec781183c0800000000000000
+      internalID: -4359176039662434034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_mode_base_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1487
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1d2633bdc119870800000000000000
+      internalID: 8687756883959927279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_mode_base_7
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 22
+        width: 727
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e1183ba7b8df760800000000000000
+      internalID: 7493298714128227907
       vertices: []
       indices: 
       edges: []
