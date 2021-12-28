@@ -10823,6 +10823,7 @@ MonoBehaviour:
   player: {fileID: 1835312238}
   animator: {fileID: 1835312235}
   skill: {fileID: 1560899636738005417, guid: 157f9630b30dbd046982b9e17f69f435, type: 3}
+  btnHeal: {fileID: 902343210}
 --- !u!61 &1835312240
 BoxCollider2D:
   m_ObjectHideFlags: 0

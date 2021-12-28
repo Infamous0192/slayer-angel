@@ -20,6 +20,7 @@ public class Starship : MonoBehaviour {
 
   void Start() {
     btnTeleport.onClick.AddListener(() => {
+      
       gateTeleport.SetActive(true);
     });
     btnExitTeleport.onClick.AddListener(() => {
