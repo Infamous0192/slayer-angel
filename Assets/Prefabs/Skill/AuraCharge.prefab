@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1560899636738005418}
   - component: {fileID: 1560899636738005417}
   m_Layer: 0
-  m_Name: Aura Charge
+  m_Name: AuraCharge
   m_TagString: Skill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,10 +116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cab268dcb3028042b5b1e4c4e368503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Aura Charge
-  Description: Increase HP Regen for few seconds
-  BaseManaCost: 100
+  SkillName: AuraCharge
+  Description: Healing
+  ManaCost: 150
   Level: 1
   Cooldown: 30
   IsUnlocked: 1
-  animator: {fileID: 0}
