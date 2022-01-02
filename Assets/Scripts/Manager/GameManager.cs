@@ -17,21 +17,18 @@ public class GameManager : MonoBehaviour {
 
     private const string PROGRESS_KEY = "Progress";
 
-    public UserProgressData Progress = new UserProgressData();
-    public Text GoldInfo;
-
-    private Player _player;
+    public UserProgressData Progress;
+    public SaveData Data;
 
     public void AddGold(double value) {
-        Progress.Gold += value;
-        GoldInfo.text = Progress.Gold.ToString("0");
+        Data.Stats.Gold += value;
     }
 
     private void Start() {
-        Load();
-        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        InvokeRepeating("Run", 0, 1f);
-        InvokeRepeating("Save", 0, 5f);
+        // Load();
+        // InvokeRepeating("Save", 0, 5f);
+        Data = new SaveData();
+        Data.Stats.Gold = 1000;
     }
 
     private void Load() {
@@ -39,15 +36,10 @@ public class GameManager : MonoBehaviour {
             string json = PlayerPrefs.GetString(PROGRESS_KEY);
             Progress = JsonUtility.FromJson<UserProgressData>(json);
         }
-        GoldInfo.text = Progress.Gold.ToString("0");
     }
 
     private void Save() {
         string json = JsonUtility.ToJson(Progress);
         PlayerPrefs.SetString(PROGRESS_KEY, json);
-    }
-
-    private void Run() {
-        Progress.RunDistance += _player.MovementSpeed / 100;
     }
 }
