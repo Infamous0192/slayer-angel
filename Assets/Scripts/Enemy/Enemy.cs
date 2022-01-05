@@ -38,6 +38,9 @@ public class Enemy : MonoBehaviour {
     public double GoldYield = 300;
     #endregion
 
+    [SerializeField]
+    private Rigidbody2D rb2d;
+
     public void TakeDamage(int damage) {
         _currentHealth -= damage;
         HealthBar.SetHealth((int)CurrentHealth, (int)MaxHealth);
@@ -72,6 +75,7 @@ public class Enemy : MonoBehaviour {
     }
 
     private void AttackPlayer() {
+        rb2d.velocity = new Vector2(0, 0);
         if (attackPeriod > AttackInterval) {
             player.TakeDamage(AttackDamage);
             attackPeriod = 0;
@@ -80,9 +84,6 @@ public class Enemy : MonoBehaviour {
     }
 
     private void Move() {
-        Vector2 pos = transform.position;
-        pos.x -= (MovementSpeed + player.MovementSpeed) / 35000;
-
-        transform.position = pos;
+        rb2d.velocity = new Vector2((MovementSpeed + player.MovementSpeed) / -120, 0);
     }
 }

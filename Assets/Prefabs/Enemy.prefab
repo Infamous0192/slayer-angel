@@ -361,6 +361,7 @@ GameObject:
   - component: {fileID: 3277021707115892947}
   - component: {fileID: 3277021707115892946}
   - component: {fileID: 3277021707115892945}
+  - component: {fileID: -3844461768928418795}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -479,6 +480,28 @@ MonoBehaviour:
   baseDamage: 5
   baseMovementSpeed: 250
   GoldYield: 300
+  rb2d: {fileID: -3844461768928418795}
+--- !u!50 &-3844461768928418795
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3277021707115892951}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &3277021707743697269
 GameObject:
   m_ObjectHideFlags: 0
