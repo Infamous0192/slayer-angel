@@ -41,8 +41,8 @@ public class Enemy : MonoBehaviour {
 
     private Rigidbody2D rb2d;
 
-    public void TakeDamage(int damage) {
-        _currentHealth -= damage;
+    public void TakeDamage(double damage) {
+        _currentHealth -= (float)damage;
         HealthBar.SetHealth((int)CurrentHealth, (int)MaxHealth);
         if (CurrentHealth <= 0) Dead();
     }
@@ -66,7 +66,7 @@ public class Enemy : MonoBehaviour {
     }
 
     private void Dead() {
-        GameManager.Instance.AddGold(GoldYield);
+        StageManager.Instance.AddGold(GoldYield);
         Destroy(gameObject);
     }
 

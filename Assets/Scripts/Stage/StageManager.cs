@@ -21,6 +21,9 @@ public class StageManager : MonoBehaviour {
     [SerializeField]
     private Text DistanceText;
 
+    [SerializeField]
+    private Text GoldText;
+
     private float distance = 0;
 
     public double StageDistance = 0;
@@ -28,6 +31,10 @@ public class StageManager : MonoBehaviour {
     public float[] Checkpoint;
 
     public float EnemyMultiplier;
+
+    public void AddGold(double gold) {
+        GameManager.Instance.Data.Stats.Gold += gold;
+    }
 
     private void Start() {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();

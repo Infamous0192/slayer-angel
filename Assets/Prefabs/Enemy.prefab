@@ -474,13 +474,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthBar: {fileID: 3277021707086825544}
-  baseHealth: 50
+  baseHealth: 100
   baseAttackSpeed: 100
   baseAttackTime: 2
-  baseDamage: 5
+  baseDamage: 50
+  AttackRange: 1
   baseMovementSpeed: 250
   GoldYield: 300
-  rb2d: {fileID: -3844461768928418795}
 --- !u!50 &-3844461768928418795
 Rigidbody2D:
   serializedVersion: 4

@@ -4,16 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
-    private static GameManager _instance = null;
-    public static GameManager Instance {
-        get {
-            if (_instance == null) {
-                _instance = FindObjectOfType<GameManager>();
-            }
-
-            return _instance;
-        }
-    }
+    public static GameManager Instance;
 
     private const string PROGRESS_KEY = "Progress";
 
@@ -24,11 +15,19 @@ public class GameManager : MonoBehaviour {
         Data.Stats.Gold += value;
     }
 
+    void Awake() {
+        if (Instance == null) {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        } else if (Instance != this) {
+            Destroy(gameObject);
+        }
+    }
+
     private void Start() {
         // Load();
         // InvokeRepeating("Save", 0, 5f);
         Data = new SaveData();
-        Data.Stats.Gold = 1000;
     }
 
     private void Load() {

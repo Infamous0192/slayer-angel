@@ -8,7 +8,7 @@ public class Stats {
 
     public Stats() {
         Gold = 0;
-        AttackPower = 40;
+        AttackPower = 75;
         MaxHealth = 200;
         MaxMana = 100;
         CurrentHealth = 0;

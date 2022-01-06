@@ -123,85 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &2797756
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2797757}
-  m_Layer: 0
-  m_Name: Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2797757
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2797756}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 550.5, y: 259.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 610009365}
-  - {fileID: 16689316}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &16689315
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 16689316}
-  - component: {fileID: 16689317}
-  m_Layer: 0
-  m_Name: Stage Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &16689316
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16689315}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2797757}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &16689317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16689315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a8ad9d43df1ae94aa6dbb5794a83a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DistanceText: {fileID: 789454852}
-  StageDistance: 100
-  Checkpoint: []
-  EnemyMultiplier: 0
 --- !u!1 &28220382
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +135,7 @@ GameObject:
   - component: {fileID: 28220385}
   - component: {fileID: 28220384}
   m_Layer: 5
-  m_Name: gold
+  m_Name: GoldText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1669,8 +1590,9 @@ GameObject:
   m_Component:
   - component: {fileID: 610009365}
   - component: {fileID: 610009366}
+  - component: {fileID: 610009367}
   m_Layer: 0
-  m_Name: Game Manager
+  m_Name: Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1684,10 +1606,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610009364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 550.5, y: 259.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2797757}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &610009366
@@ -1707,6 +1629,23 @@ MonoBehaviour:
     RunDistance: 0
   Data:
     Stage: []
+--- !u!114 &610009367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610009364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8ad9d43df1ae94aa6dbb5794a83a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DistanceText: {fileID: 789454852}
+  GoldText: {fileID: 0}
+  StageDistance: 100
+  Checkpoint: []
+  EnemyMultiplier: 0
 --- !u!1 &656857204
 GameObject:
   m_ObjectHideFlags: 0
@@ -10419,16 +10358,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae2cae9fe8e4fb040aca69374bd5afe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseAttackSpeed: 100
-  baseAttackInterval: 1.7
-  baseDamage: 25
+  AttackPower: 50
+  AttackSpeed: 300
+  _attackInterval: 1.7
+  AttackRange: 1
+  AttackStability: 0.633
   healthBar: {fileID: 515642010}
-  baseHealth: 100
-  HealthRegen: 0.1
+  MaxHealth: 0
+  HealthRegen: 0.10000000149011612
+  CurrentHealth: 0
   BaseMana: 100
-  baseMovementSpeed: 300
+  _movementSpeed: 300
   HasAction: 0
-  animator: {fileID: 1835312235}
 --- !u!1 &1855818106
 GameObject:
   m_ObjectHideFlags: 0

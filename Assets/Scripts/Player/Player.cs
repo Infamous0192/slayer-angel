@@ -4,24 +4,22 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
     #region attack
-    public int baseAttackSpeed = 100;
-    public float baseAttackInterval = 1.7f;
-    public int baseDamage = 25;
-    public float AttackRange = 1f;
-    public float AttackSpeed => baseAttackSpeed;
-    public float AttackInterval => 1 / (AttackSpeed / (baseAttackSpeed * baseAttackInterval));
-    public int AttackDamage => baseDamage;
+
+    public double AttackPower;
+    public float AttackSpeed;
+    [SerializeField] private float _attackInterval;
+    public float AttackInterval => 1 / (AttackSpeed / (300 * _attackInterval));
+    public float AttackRange;
+    [Range(0, 1)] public float AttackStability;
+
     private float attackPeriod = 0;
     #endregion
 
     #region health
-    public HealthBar healthBar;
-    public float baseHealth = 100;
-    private float _currentHealth;
-    private float _maxHealth;
-    public float HealthRegen = 0.1f;
-    public float CurrentHealth => _currentHealth;
-    public float MaxHealth => _maxHealth;
+    [SerializeField] private HealthBar healthBar;
+    public double MaxHealth;
+    public double HealthRegen;
+    public double CurrentHealth;
     #endregion
 
     #region mana
@@ -29,8 +27,8 @@ public class Player : MonoBehaviour {
     #endregion
 
     #region movement
-    public int baseMovementSpeed = 300;
-    public float MovementSpeed => IsAttacking || HasAction ? 0 : baseMovementSpeed;
+    [SerializeField] private int _movementSpeed = 300;
+    public float MovementSpeed => IsAttacking || HasAction ? 0 : _movementSpeed;
     #endregion
 
     #region behaviour
@@ -39,6 +37,7 @@ public class Player : MonoBehaviour {
     public bool IsAttacking {
         get => _isAttacking;
         set {
+            if (_isAttacking) Attack();
             if (value != _isAttacking) {
                 _isAttacking = value;
                 attackPeriod = 0;
@@ -49,29 +48,28 @@ public class Player : MonoBehaviour {
     }
     #endregion
 
-    public Animator animator;
+    private Animator animator;
 
     public void TakeDamage(int damage) {
-        _currentHealth -= damage;
-        healthBar.SetHealth((int)_currentHealth);
+        CurrentHealth -= damage;
+        healthBar.SetHealth((int)CurrentHealth);
     }
 
     private void Start() {
-        _maxHealth = baseHealth;
-        _currentHealth = _maxHealth;
-        healthBar.SetMaxHealth((int)_currentHealth);
+        animator = GetComponent<Animator>();
+
+        AttackPower += GameManager.Instance.Data.Stats.AttackPower;
+        MaxHealth = GameManager.Instance.Data.Stats.MaxHealth;
+        CurrentHealth = MaxHealth;
+
+        healthBar.SetMaxHealth((int)MaxHealth);
         InvokeRepeating("Regenerate", 0, 1f);
     }
 
     private void FixedUpdate() {
         RaycastHit2D hitObstacle = Physics2D.Raycast(transform.position, Vector2.right, 1f);
 
-        if (hitObstacle.collider != null && hitObstacle.collider.tag == "Enemy") {
-            Attack();
-            IsAttacking = true;
-        } else {
-            IsAttacking = false;
-        }
+        IsAttacking = hitObstacle.collider != null && hitObstacle.collider.tag == "Enemy";
     }
 
     private void Attack() {
@@ -85,14 +83,15 @@ public class Player : MonoBehaviour {
 
     private IEnumerator AttackEnemies() {
         animator.SetTrigger("Attack");
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
         Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, AttackRange);
         foreach (Collider2D enemy in enemies) {
-            enemy.GetComponent<Enemy>().TakeDamage(AttackDamage);
+            double attackError = AttackPower - (100 * AttackStability / 100);
+            enemy.GetComponent<Enemy>().TakeDamage(Random.Range((float)(AttackPower - attackError), (float)AttackPower));
         }
     }
 
     private void Regenerate() {
-        _currentHealth += HealthRegen;
+        CurrentHealth += HealthRegen;
     }
 }
