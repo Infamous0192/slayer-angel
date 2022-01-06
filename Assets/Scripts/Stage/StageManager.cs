@@ -34,10 +34,12 @@ public class StageManager : MonoBehaviour {
 
     public void AddGold(double gold) {
         GameManager.Instance.Data.Stats.Gold += gold;
+        GoldText.text = $"{GameManager.Instance.Data.Stats.Gold.ToString("C0")}".Substring(1);
     }
 
     private void Start() {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        GoldText.text = $"{GameManager.Instance.Data.Stats.Gold.ToString("C0")}".Substring(1);
     }
 
     private void Update() {
