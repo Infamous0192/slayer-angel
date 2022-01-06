@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour {
     public int baseAttackSpeed = 100;
     public float baseAttackTime = 3f;
     public int baseDamage = 25;
+    public float AttackRange = 1f;
     public float AttackSpeed => baseAttackSpeed;
     public float AttackInterval => 1 / (AttackSpeed / (100 * baseAttackTime));
     public int AttackDamage => baseDamage;
@@ -38,7 +39,6 @@ public class Enemy : MonoBehaviour {
     public double GoldYield = 300;
     #endregion
 
-    [SerializeField]
     private Rigidbody2D rb2d;
 
     public void TakeDamage(int damage) {
@@ -48,6 +48,7 @@ public class Enemy : MonoBehaviour {
     }
 
     private void Start() {
+        rb2d = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         _maxHealth = baseHealth;
         _currentHealth = _maxHealth;
@@ -55,7 +56,7 @@ public class Enemy : MonoBehaviour {
         HealthBar.SetHealth((int)CurrentHealth, (int)MaxHealth);
     }
 
-    private void Update() {
+    private void FixedUpdate() {
         if (isAttacking) AttackPlayer();
         else Move();
 
@@ -70,17 +71,16 @@ public class Enemy : MonoBehaviour {
     }
 
     private bool IsPlayerAhead() {
-        float distance = Vector2.Distance(transform.position, player.transform.position);
-        return distance <= 1f;
+        return Vector2.Distance(transform.position, player.transform.position) <= AttackRange;
     }
 
     private void AttackPlayer() {
         rb2d.velocity = new Vector2(0, 0);
+        attackPeriod += Time.deltaTime;
         if (attackPeriod > AttackInterval) {
             player.TakeDamage(AttackDamage);
             attackPeriod = 0;
         }
-        attackPeriod += UnityEngine.Time.deltaTime;
     }
 
     private void Move() {

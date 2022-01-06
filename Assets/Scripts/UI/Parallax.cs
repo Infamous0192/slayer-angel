@@ -3,24 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Parallax : MonoBehaviour {
-    public BoxCollider2D box;
-    public Player player;
     public float depth = 1f;
 
+    private RectTransform rt;
+    private Player player;
     private float length;
 
-    private void Awake() {
-        player = GameObject.Find("Player").GetComponent<Player>();
+    private void Start() {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        rt = GetComponent<RectTransform>();
+        length = rt.rect.width;
     }
 
-    // Start is called before the first frame update
-    void Start() {
-        box = GetComponent<BoxCollider2D>();
-        length = box.size.x;
-    }
-
-    // Update is called once per frame
-    void FixedUpdate() {
+    private void FixedUpdate() {
         float realVelocity = player.MovementSpeed / (depth * 100);
         Vector2 pos = transform.position;
 

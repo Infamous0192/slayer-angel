@@ -34,7 +34,7 @@ public class StageManager : MonoBehaviour {
     }
 
     private void Update() {
-        if (!player.IsEnemyAhead) {
+        if (!player.IsAttacking) {
             Run();
         }
     }

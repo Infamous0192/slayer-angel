@@ -124,8 +124,9 @@ MonoBehaviour:
   baseHealth: 100
   HealthRegen: 0.1
   BaseMana: 100
-  HasAction: 0
   baseMovementSpeed: 300
+  HasAction: 0
+  animator: {fileID: 7226949023289695757}
 --- !u!114 &7226949023289695753
 MonoBehaviour:
   m_ObjectHideFlags: 0
