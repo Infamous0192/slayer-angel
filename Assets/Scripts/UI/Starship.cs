@@ -11,7 +11,6 @@ public class Starship : MonoBehaviour {
   public Button btnCharUpgrade;
   public Button btnExitCharUpgrade;
 
-  public Button playStage;
   public GameObject gateTeleport;
   public GameObject charUpgradeMenu;
 
@@ -31,9 +30,6 @@ public class Starship : MonoBehaviour {
     });
     btnExitCharUpgrade.onClick.AddListener(() => {
       charUpgradeMenu.SetActive(false);
-    });
-    playStage.onClick.AddListener(() => {
-      SceneManager.LoadScene(2);
     });
 
 
