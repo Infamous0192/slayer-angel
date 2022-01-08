@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class Starship : MonoBehaviour {
   public Button btnTeleport;
-
   public Button btnExitTeleport;
   public Button btnCharUpgrade;
   public Button btnExitCharUpgrade;
+  public Button btnQuit;
 
   public GameObject gateTeleport;
   public GameObject charUpgradeMenu;
@@ -17,9 +17,10 @@ public class Starship : MonoBehaviour {
 
 
 
+
   void Start() {
     btnTeleport.onClick.AddListener(() => {
-      
+
       gateTeleport.SetActive(true);
     });
     btnExitTeleport.onClick.AddListener(() => {
@@ -32,6 +33,14 @@ public class Starship : MonoBehaviour {
       charUpgradeMenu.SetActive(false);
     });
 
+    btnQuit.onClick.AddListener(() => {
+#if !UNITY_EDITOR
+                Application.Quit();
+#endif
+#if UNITY_EDITOR
+      UnityEditor.EditorApplication.isPlaying = false;
+#endif
+    });
 
   }
 
