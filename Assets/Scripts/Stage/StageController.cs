@@ -4,18 +4,40 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class StageController : MonoBehaviour {
-    public Slider ProgressBar;
-    // public Sprite Flag;
+    public Stage[] Stage;
+
+    [SerializeField] private Text NameText;
+    [SerializeField] private Text TitleText;
+    [SerializeField] private Text DescriptionText;
+
+    [SerializeField] private Button PreviousButton;
+    [SerializeField] private Button NextButton;
+    [SerializeField] private Button PlayButton;
+
+    [SerializeField] private GameObject RewardContainer;
+
+    private int index = 0;
 
     private void Start() {
-        ProgressBar.maxValue = (float) StageManager.Instance.StageDistance;
-        ProgressBar.value = (float) GameManager.Instance.Progress.RunDistance;
-        // Vector2 pos = ProgressBar.transform.position;
+        LoadStage(index);
 
-        // Instantiate(Flag, pos, Quaternion.identity);
+        PreviousButton.onClick.AddListener(() => {
+            if (index > 0) LoadStage(--index);
+        });
+        NextButton.onClick.AddListener(() => {
+            if (index < Stage.Length - 1) {
+                LoadStage(++index);
+            }
+        });
     }
 
-    private void Update() {
-        ProgressBar.value = (float) GameManager.Instance.Progress.RunDistance;
+    private void LoadStage(int index) {
+        NameText.text = Stage[index].Name;
+        TitleText.text = Stage[index].Title;
+        DescriptionText.text = Stage[index].Description;
+
+        PlayButton.onClick.AddListener(() => {
+            Debug.Log(Stage[index].Name);
+        });
     }
 }

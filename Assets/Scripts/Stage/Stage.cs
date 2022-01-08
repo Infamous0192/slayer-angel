@@ -1,9 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Stage : MonoBehaviour
-{
-    public double distance;
-    public double awe;
+[System.Serializable]
+public class Stage {
+    public string Name;
+    public string Title;
+    public string Description;
+    public double Distance;
+    public bool IsUnlocked;
+    public GameObject[] Reward;
 }
