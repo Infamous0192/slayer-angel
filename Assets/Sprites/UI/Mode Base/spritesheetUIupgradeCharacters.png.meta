@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 46ac9aee49b11a84eb9076a3181e1e8f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2431744603646007908
+    second: spritesheetUIupgradeCharacters_0
+  - first:
+      213: 7659663841488418093
+    second: spritesheetUIupgradeCharacters_1
+  - first:
+      213: -986282466686376784
+    second: spritesheetUIupgradeCharacters_2
+  - first:
+      213: -7289605083875451407
+    second: spritesheetUIupgradeCharacters_3
+  - first:
+      213: -1080144058750372312
+    second: spritesheetUIupgradeCharacters_4
+  - first:
+      213: 8205042713179004153
+    second: spritesheetUIupgradeCharacters_5
+  - first:
+      213: -2630440424039348609
+    second: spritesheetUIupgradeCharacters_6
+  - first:
+      213: 151491390903616218
+    second: spritesheetUIupgradeCharacters_7
+  - first:
+      213: -1355217242186068056
+    second: spritesheetUIupgradeCharacters_8
+  - first:
+      213: 4911419173567855211
+    second: spritesheetUIupgradeCharacters_9
+  - first:
+      213: -2314941656432754853
+    second: spritesheetUIupgradeCharacters_10
+  - first:
+      213: -3464875351844552687
+    second: spritesheetUIupgradeCharacters_11
+  - first:
+      213: -2691872123723886522
+    second: spritesheetUIupgradeCharacters_12
+  - first:
+      213: 77243082068728330
+    second: spritesheetUIupgradeCharacters_13
+  - first:
+      213: -5594230013593404004
+    second: spritesheetUIupgradeCharacters_14
+  - first:
+      213: 6943017085162953904
+    second: spritesheetUIupgradeCharacters_15
+  - first:
+      213: -614876536583702660
+    second: spritesheetUIupgradeCharacters_16
+  - first:
+      213: -7264279006466112714
+    second: spritesheetUIupgradeCharacters_17
+  - first:
+      213: -7943124712877390785
+    second: spritesheetUIupgradeCharacters_18
+  - first:
+      213: -6727326782467934359
+    second: spritesheetUIupgradeCharacters_19
+  - first:
+      213: -314537874475238357
+    second: spritesheetUIupgradeCharacters_20
+  - first:
+      213: 7066129203513277209
+    second: spritesheetUIupgradeCharacters_21
+  - first:
+      213: -3025302941545250962
+    second: spritesheetUIupgradeCharacters_22
+  - first:
+      213: 22892024495308229
+    second: spritesheetUIupgradeCharacters_23
+  - first:
+      213: -649817757416992887
+    second: spritesheetUIupgradeCharacters_24
+  - first:
+      213: -7802862417607959400
+    second: spritesheetUIupgradeCharacters_25
+  - first:
+      213: -5485928793189783333
+    second: spritesheetUIupgradeCharacters_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1135
+        width: 1714
+        height: 1025
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95e43bba25b04ed0800000000000000
+      internalID: -2431744603646007908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_1
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 2032
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2532d26ea79c4a60800000000000000
+      internalID: 7659663841488418093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_2
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 1909
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b466f472550052f0800000000000000
+      internalID: -986282466686376784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_3
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 1775
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fdd8b65cce16da90800000000000000
+      internalID: -7289605083875451407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_4
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 1649
+        width: 108
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8267fef83be8201f0800000000000000
+      internalID: -1080144058750372312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_5
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 1523
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc11fd10ea2ed170800000000000000
+      internalID: 8205042713179004153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_6
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 1395
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f768e4afe5cce7bd0800000000000000
+      internalID: -2630440424039348609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_7
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 1268
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2075d0e943a1200800000000000000
+      internalID: 151491390903616218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_8
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 1137
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afc306391d413de0800000000000000
+      internalID: -1355217242186068056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_9
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1014
+        width: 414
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6afd8f67bdd82440800000000000000
+      internalID: 4911419173567855211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_10
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1014
+        width: 254
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f329c14dcafdfd0800000000000000
+      internalID: -2314941656432754853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_11
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 1015
+        width: 140
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1108c46a93a4aefc0800000000000000
+      internalID: -3464875351844552687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_12
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 755
+        width: 12
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64059acc09c84aad0800000000000000
+      internalID: -2691872123723886522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_13
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 1011
+        width: 47
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a10148c2c621100800000000000000
+      internalID: 77243082068728330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_14
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 1006
+        width: 109
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9dbfef217d4d52b0800000000000000
+      internalID: -5594230013593404004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 885
+        width: 253
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc1b96d04d8a5060800000000000000
+      internalID: 6943017085162953904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_16
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 884
+        width: 415
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77b4383c058777f0800000000000000
+      internalID: -614876536583702660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_17
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 891
+        width: 139
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633824e3bb8103b90800000000000000
+      internalID: -7264279006466112714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 747
+        width: 734
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34015a782a54c190800000000000000
+      internalID: -7943124712877390785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_19
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 757
+        width: 136
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967f60b2febb3a2a0800000000000000
+      internalID: -6727326782467934359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 116
+        width: 880
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c3f7b387982abf0800000000000000
+      internalID: -314537874475238357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_21
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 626
+        width: 210
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b3c68921fef0260800000000000000
+      internalID: 7066129203513277209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_22
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 504
+        width: 202
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f304fd007f306d0800000000000000
+      internalID: -3025302941545250962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_23
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 499
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd7b3ccc24515000800000000000000
+      internalID: 22892024495308229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_24
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 251
+        width: 628
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f4b6841326bf6f0800000000000000
+      internalID: -649817757416992887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_25
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 117
+        width: 91
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c5b37f8f9a6b390800000000000000
+      internalID: -7802862417607959400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheetUIupgradeCharacters_26
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 116
+        width: 817
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8e5da04d01ed3b0800000000000000
+      internalID: -5485928793189783333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
