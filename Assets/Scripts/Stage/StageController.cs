@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class StageController : MonoBehaviour {
     public Stage[] Stage;
@@ -35,9 +36,16 @@ public class StageController : MonoBehaviour {
         NameText.text = Stage[index].Name;
         TitleText.text = Stage[index].Title;
         DescriptionText.text = Stage[index].Description;
+        PlayButton.onClick.RemoveAllListeners();
 
         PlayButton.onClick.AddListener(() => {
-            Debug.Log(Stage[index].Name);
+            SceneManager.LoadScene(Stage[index].SceneName);
         });
+
+        foreach (Transform child in RewardContainer.transform) {
+            Destroy(child.gameObject);
+        }
+
+        Instantiate(Stage[index].Reward[0], RewardContainer.transform.position, Quaternion.identity, RewardContainer.transform);
     }
 }

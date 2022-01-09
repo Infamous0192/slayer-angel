@@ -3,27 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AuraCharge : Skill {
-    private Player player;
-    private Animator animator;
+    public float Duration;
 
-    private void Start() {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        animator = player.GetComponent<Animator>();
+    public override void OnStart() {
         transform.position = new Vector2(player.transform.position.x - 0.1f, player.transform.position.y);
         StartCoroutine(Action());
     }
 
     private IEnumerator Action() {
-        animator.SetTrigger(this.SkillName);
+        animator.SetTrigger(this.Name);
         /** only change code below **/
         player.HasAction = true;
         double baseRegen = player.HealthRegen;
         yield return new WaitForSeconds(1.95f);
-        player.HealthRegen = baseRegen + 5f;
+        player.HealthRegen = baseRegen + 20f;
         player.HasAction = false;
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(Duration);
+        player.HealthRegen = baseRegen;
         /** only change code above **/
-        animator.ResetTrigger(this.SkillName);
         Destroy(gameObject);
     }
 }

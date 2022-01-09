@@ -53,7 +53,7 @@ public class MenuUpgradeChar : MonoBehaviour {
         hp = GameManager.Instance.Data.Stats.MaxHealth;
         mp = GameManager.Instance.Data.Stats.MaxMana;
 
-        GoldText.text = $"{gold.ToString("C0")}".Substring(1);
+        GoldText.text = gold.ToString("0,0");
         APText.text = $": {(int)ap}";
         HPText.text = $": {(int)hp}";
         MPText.text = $": {(int)mp}";

@@ -3,10 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Skill : MonoBehaviour {
-    public string SkillName = "";
-    public string Description = "";
+    public string Name = "";
     public float ManaCost = 0;
-    public int Level = 0;
     public float Cooldown = 0;
-    public bool IsUnlocked = false;
+
+    [HideInInspector] public Player player;
+    [HideInInspector] public Animator animator;
+
+    public virtual void OnStart() { }
+
+    private void Start() {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        animator = player.GetComponent<Animator>();
+        OnStart();
+    }
 }

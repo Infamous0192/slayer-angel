@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
     #region attack
-
     public double AttackPower;
     public float AttackSpeed;
     [SerializeField] private float _attackInterval;
@@ -17,13 +16,30 @@ public class Player : MonoBehaviour {
 
     #region health
     [SerializeField] private HealthBar healthBar;
+    private double _currentHealth;
     public double MaxHealth;
     public double HealthRegen;
-    public double CurrentHealth;
+    public double CurrentHealth {
+        get => _currentHealth;
+        set {
+            _currentHealth = value >= MaxHealth ? MaxHealth : value;
+            healthBar.SetHealth((int)_currentHealth);
+        }
+    }
     #endregion
 
     #region mana
-    public float BaseMana = 100;
+    [SerializeField] private PlayerManaBar manaBar;
+    private double _currentMana = 100;
+    public double MaxMana;
+    public double ManaRegen;
+    public double CurrentMana {
+        get => _currentMana;
+        set {
+            _currentMana = value >= MaxMana ? MaxMana : value;
+            manaBar.SetMana((float)_currentMana);
+        }
+    }
     #endregion
 
     #region movement
@@ -52,22 +68,28 @@ public class Player : MonoBehaviour {
 
     public void TakeDamage(int damage) {
         CurrentHealth -= damage;
-        healthBar.SetHealth((int)CurrentHealth);
     }
 
     private void Start() {
         animator = GetComponent<Animator>();
 
-        AttackPower += GameManager.Instance.Data.Stats.AttackPower;
+        AttackPower = GameManager.Instance.Data.Stats.AttackPower;
         MaxHealth = GameManager.Instance.Data.Stats.MaxHealth;
+        MaxMana = GameManager.Instance.Data.Stats.MaxMana;
+        CurrentMana = MaxMana;
         CurrentHealth = MaxHealth;
 
+        manaBar.SetMaxMana((int)MaxMana);
         healthBar.SetMaxHealth((int)MaxHealth);
+
         InvokeRepeating("Regenerate", 0, 1f);
     }
 
     private void FixedUpdate() {
         RaycastHit2D hitObstacle = Physics2D.Raycast(transform.position, Vector2.right, 1f);
+
+        CurrentHealth += HealthRegen * Time.fixedDeltaTime;
+        CurrentMana += ManaRegen * Time.fixedDeltaTime;
 
         IsAttacking = hitObstacle.collider != null && hitObstacle.collider.tag == "Enemy";
     }
@@ -85,13 +107,14 @@ public class Player : MonoBehaviour {
         animator.SetTrigger("Attack");
         yield return new WaitForSeconds(0.2f);
         Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, AttackRange);
+        double damage = Random.Range((float)(AttackPower * AttackStability), (float)AttackPower);
+
         foreach (Collider2D enemy in enemies) {
-            double attackError = AttackPower - (100 * AttackStability / 100);
-            enemy.GetComponent<Enemy>().TakeDamage(Random.Range((float)(AttackPower - attackError), (float)AttackPower));
+            enemy.GetComponent<Enemy>().TakeDamage(damage);
         }
     }
 
     private void Regenerate() {
-        CurrentHealth += HealthRegen;
+        
     }
 }

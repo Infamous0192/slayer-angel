@@ -1122,8 +1122,9 @@ GameObject:
   m_Component:
   - component: {fileID: 406113374}
   - component: {fileID: 406113376}
+  - component: {fileID: 406113375}
   m_Layer: 5
-  m_Name: Mana point
+  m_Name: Mana Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1150,6 +1151,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 380, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &406113375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406113373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd0bf47707248b4d942beb6c45fd18d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 406113376}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.23529412, g: 0.16078432, b: 0.6666667, a: 1}
+    key1: {r: 0.23529412, g: 0.16078432, b: 0.6666667, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  fill: {fileID: 111558388}
 --- !u!114 &406113376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1197,7 +1241,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 4
   m_WholeNumbers: 0
-  m_Value: 4
+  m_Value: 1.99
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1755,7 +1799,6 @@ GameObject:
   m_Component:
   - component: {fileID: 656857205}
   - component: {fileID: 656857206}
-  - component: {fileID: 656857207}
   m_Layer: 5
   m_Name: Progress Bar
   m_TagString: Untagged
@@ -1837,19 +1880,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &656857207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656857204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c19c0ac3d487214d8a163712dabca48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ProgressBar: {fileID: 656857206}
 --- !u!1 &657745078
 GameObject:
   m_ObjectHideFlags: 0
@@ -4142,7 +4172,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 44.862556, y: -1.4999847}
+  m_AnchoredPosition: {x: 52.137, y: 1.5}
   m_SizeDelta: {x: 89.72504, y: -3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1460635341
@@ -10818,12 +10848,13 @@ MonoBehaviour:
   AttackSpeed: 300
   _attackInterval: 1.7
   AttackRange: 1
-  AttackStability: 0.633
+  AttackStability: 0.6
   healthBar: {fileID: 515642010}
   MaxHealth: 0
-  HealthRegen: 0.10000000149011612
-  CurrentHealth: 0
-  BaseMana: 100
+  HealthRegen: 1
+  manaBar: {fileID: 406113375}
+  MaxMana: 300
+  ManaRegen: 5
   _movementSpeed: 300
   HasAction: 0
 --- !u!1 &1855818106
