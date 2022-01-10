@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 2114269953611616700}
   - component: {fileID: 7429574258253230553}
   m_Layer: 5
-  m_Name: Shockblast
+  m_Name: Empty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1355217242186068056, guid: 46ac9aee49b11a84eb9076a3181e1e8f,
+  m_Sprite: {fileID: -2630440424039348609, guid: 46ac9aee49b11a84eb9076a3181e1e8f,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0

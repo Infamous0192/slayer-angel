@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class CharacterUpgrade : MonoBehaviour {
+    public string Name;
     public float CostMultiplier;
     private int _level = 1;
     public int Level {
@@ -26,10 +27,12 @@ public class CharacterUpgrade : MonoBehaviour {
     public Text CostText;
     public Button UpgradeButton;
 
+    private Equipment[] equipments;
+
     public virtual void OnUpgrade() { }
 
     private void Start() {
-        Debug.Log(Cost);
+        LoadSaveData();
         LevelText.text = $"Lv. {Level}";
         CostText.text = $"{(int)Cost}";
         UpgradeButton.onClick.AddListener(() => {
@@ -41,8 +44,24 @@ public class CharacterUpgrade : MonoBehaviour {
         });
     }
 
+    public void LoadSaveData() {
+        equipments = GameManager.Instance.Data.Equipment;
+        foreach (Equipment equipment in equipments) {
+            if (equipment.Name == this.Name) {
+                this.Level = equipment.Level;
+                return;
+            }
+        }
+    }
+
     private void OnLevelUp() {
         LevelText.text = $"Lv. {Level}";
         CostText.text = $"{(int)Cost}";
+        foreach (Equipment equipment in equipments) {
+            if (equipment.Name == this.Name) {
+                equipment.Level++;
+                return;
+            }
+        }
     }
 }

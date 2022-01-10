@@ -1441,7 +1441,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 520, y: 72}
+  m_SizeDelta: {x: 606.1268, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &515642010
 MonoBehaviour:
@@ -1533,7 +1533,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 4
   m_WholeNumbers: 0
-  m_Value: 4
+  m_Value: 3.09
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1788,6 +1788,42 @@ MonoBehaviour:
     Gold: 0
     RunDistance: 0
   Data:
+    Stats:
+      Gold: 0
+      AttackPower: 75
+      MaxHealth: 200
+      MaxMana: 100
+      CurrentHealth: 0
+      CurrentMana: 0
+    Equipment:
+    - Name: Sword
+      Level: 1
+      IsUnlocked: 1
+    - Name: Armour
+      Level: 1
+      IsUnlocked: 1
+    - Name: Pendant
+      Level: 1
+      IsUnlocked: 0
+    Skill:
+    - Name: Shockblast
+      Level: 1
+      IsUnlocked: 1
+    - Name: AuraCharge
+      Level: 1
+      IsUnlocked: 1
+    - Name: HypersonicStab
+      Level: 1
+      IsUnlocked: 0
+    Slot:
+    - IsUnlocked: 1
+      Skill: Shockblast
+    - IsUnlocked: 1
+      Skill: 
+    - IsUnlocked: 0
+      Skill: 
+    - IsUnlocked: 0
+      Skill: 
     Stage: []
 --- !u!1 &656857204
 GameObject:
@@ -3279,7 +3315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 308.5, y: 0.0000038146973}
+  m_AnchoredPosition: {x: 308.5, y: 0}
   m_SizeDelta: {x: 617, y: 69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1295326524
@@ -3902,8 +3938,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -2.0506, y: 0}
+  m_SizeDelta: {x: 4.2632, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1437667048
 Canvas:
@@ -4172,9 +4208,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 52.137, y: 1.5}
-  m_SizeDelta: {x: 89.72504, y: -3}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5.8372803, y: 1.5000305}
+  m_SizeDelta: {x: 0.2841, y: -3}
+  m_Pivot: {x: 0.2, y: 0.5}
 --- !u!114 &1460635341
 MonoBehaviour:
   m_ObjectHideFlags: 0

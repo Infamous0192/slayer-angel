@@ -798,6 +798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27bb75a2dbe5f0547a139efc94a69a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: Armour
   CostMultiplier: 1.5
   BaseCost: 150
   UpgradeAddition: 50

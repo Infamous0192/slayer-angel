@@ -1,19 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-[SerializeField]
-public class SkillSlot {
-    public bool IsUnlocked;
-    public string SkillCode;
+public class SkillSlot : MonoBehaviour {
+    public string Name;
 
-    public SkillSlot(bool isUnlocked) {
-        SkillCode = "";
-        IsUnlocked = isUnlocked;
-    }
+    [SerializeField] private Button UnequipButton;
 
-    public SkillSlot(string skillCode, bool isUnlocked) {
-        SkillCode = skillCode;
-        IsUnlocked = isUnlocked;
+    void Start() {
+        UnequipButton.onClick.AddListener(() => {
+            foreach (Slot slot in GameManager.Instance.Data.Slot) {
+                if (slot.Skill == Name) {
+                    slot.Skill = "";
+                    GameObject.Find("Skill Slot").GetComponent<SkillSlotController>().RefreshSlot();
+                }
+            }
+        });
     }
 }

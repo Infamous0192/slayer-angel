@@ -1,16 +1,16 @@
 [System.Serializable]
-public class Equipment {
+public class Skills {
     public string Name;
     public int Level;
     public bool IsUnlocked;
 
-    public Equipment(string name) {
+    public Skills(string name) {
         Name = name;
         Level = 1;
         IsUnlocked = false;
     }
 
-    public Equipment(string name, bool isUnlocked) {
+    public Skills(string name, bool isUnlocked) {
         Name = name;
         Level = 1;
         IsUnlocked = isUnlocked;
