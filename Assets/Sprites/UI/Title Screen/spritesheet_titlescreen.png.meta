@@ -1,37 +1,25 @@
 fileFormatVersion: 2
-guid: 8cb1d76ebb4a0bd4bb93ade3a571bd7a
+guid: bc6b88a3dfe62a74fa379b317f268760
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8571885603328080912
-    second: spritesheetUItitleScreen_0
+      213: 3157636978613783966
+    second: spritesheet_titlescreen_0
   - first:
-      213: -8115289771565886131
-    second: spritesheetUItitleScreen_1
+      213: 2641615778843206536
+    second: spritesheet_titlescreen_1
   - first:
-      213: -2118843631149081333
-    second: spritesheetUItitleScreen_2
+      213: -1718315730446963355
+    second: spritesheet_titlescreen_2
   - first:
-      213: -3778759954917285401
-    second: spritesheetUItitleScreen_3
+      213: -7114187553664965486
+    second: spritesheet_titlescreen_3
   - first:
-      213: -3149854678573619381
-    second: spritesheetUItitleScreen_4
+      213: 6049168673433324955
+    second: spritesheet_titlescreen_4
   - first:
-      213: 8042876175914055269
-    second: spritesheetUItitleScreen_5
-  - first:
-      213: 7824138560395067276
-    second: spritesheetUItitleScreen_6
-  - first:
-      213: -6482844949273762613
-    second: spritesheetUItitleScreen_7
-  - first:
-      213: 8362711784043094625
-    second: spritesheetUItitleScreen_8
-  - first:
-      213: -7910435343727863919
-    second: spritesheetUItitleScreen_9
+      213: 5892893358374641880
+    second: spritesheet_titlescreen_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,18 +106,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -145,200 +121,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheetUItitleScreen_0
+      name: spritesheet_titlescreen_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1280
-        width: 1002
-        height: 418
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f34856a57b8a0980800000000000000
-      internalID: -8571885603328080912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheetUItitleScreen_1
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1675
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d45547c03f2b06f80800000000000000
-      internalID: -8115289771565886131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheetUItitleScreen_2
-      rect:
-        serializedVersion: 2
-        x: 1026
-        y: 1630
-        width: 56
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0d92ce81fa5892e0800000000000000
-      internalID: -2118843631149081333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheetUItitleScreen_3
-      rect:
-        serializedVersion: 2
-        x: 1030
-        y: 1539
-        width: 566
-        height: 147
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e12fab77d52f8bc0800000000000000
-      internalID: -3778759954917285401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheetUItitleScreen_4
-      rect:
-        serializedVersion: 2
-        x: 1544
-        y: 1538
-        width: 56
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b476485cbd77944d0800000000000000
-      internalID: -3149854678573619381
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheetUItitleScreen_5
-      rect:
-        serializedVersion: 2
-        x: 1589
-        y: 1536
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5663fcdd4490e9f60800000000000000
-      internalID: 8042876175914055269
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheetUItitleScreen_6
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1407
-        width: 315
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8fb8cd019ce49c60800000000000000
-      internalID: 7824138560395067276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheetUItitleScreen_7
-      rect:
-        serializedVersion: 2
-        x: 1408
-        y: 1281
-        width: 158
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc42a90cdde4806a0800000000000000
-      internalID: -6482844949273762613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheetUItitleScreen_8
-      rect:
-        serializedVersion: 2
-        x: 1665
-        y: 1280
-        width: 158
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 162acde5f025e0470800000000000000
-      internalID: 8362711784043094625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheetUItitleScreen_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
+        y: 457
         width: 1920
         height: 1080
       alignment: 0
@@ -348,8 +135,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 197d76657fc783290800000000000000
-      internalID: -7910435343727863919
+      spriteID: e9d89e72a1e22db20800000000000000
+      internalID: 3157636978613783966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_titlescreen_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 978
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88324031e87e8a420800000000000000
+      internalID: 2641615778843206536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_titlescreen_2
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 257
+        width: 160
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d2eba72f05728e0800000000000000
+      internalID: -1718315730446963355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_titlescreen_3
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 257
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2946b4ecc14554d90800000000000000
+      internalID: -7114187553664965486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_titlescreen_4
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 256
+        width: 315
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d0a6ecbd6f2f350800000000000000
+      internalID: 6049168673433324955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_titlescreen_6
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 2
+        width: 571
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0ed2d9943c7c150800000000000000
+      internalID: 5892893358374641880
       vertices: []
       indices: 
       edges: []
