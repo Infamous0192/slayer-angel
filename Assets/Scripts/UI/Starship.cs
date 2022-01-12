@@ -9,10 +9,13 @@ public class Starship : MonoBehaviour {
   public Button btnExitTeleport;
   public Button btnCharUpgrade;
   public Button btnExitCharUpgrade;
-  public Button btnQuit;
+  public Button btnConfirmQuit;
+
 
   public GameObject gateTeleport;
   public GameObject charUpgradeMenu;
+
+
 
 
 
@@ -33,14 +36,18 @@ public class Starship : MonoBehaviour {
       charUpgradeMenu.SetActive(false);
     });
 
-    btnQuit.onClick.AddListener(() => {
+    btnConfirmQuit.onClick.AddListener(() => {
+
 #if !UNITY_EDITOR
-                Application.Quit();
+                      Application.Quit();
 #endif
 #if UNITY_EDITOR
       UnityEditor.EditorApplication.isPlaying = false;
 #endif
     });
+
+
+
 
   }
 
