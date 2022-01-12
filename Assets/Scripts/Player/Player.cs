@@ -81,8 +81,6 @@ public class Player : MonoBehaviour {
 
         manaBar.SetMaxMana((int)MaxMana);
         healthBar.SetMaxHealth((int)MaxHealth);
-
-        InvokeRepeating("Regenerate", 0, 1f);
     }
 
     private void FixedUpdate() {
@@ -112,9 +110,5 @@ public class Player : MonoBehaviour {
         foreach (Collider2D enemy in enemies) {
             enemy.GetComponent<Enemy>().TakeDamage(damage);
         }
-    }
-
-    private void Regenerate() {
-        
     }
 }

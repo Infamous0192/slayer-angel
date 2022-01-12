@@ -91,7 +91,6 @@ GameObject:
   - component: {fileID: 2114269953611616702}
   - component: {fileID: 2114269953611616703}
   - component: {fileID: 2114269953611616700}
-  - component: {fileID: 7429574258253230553}
   m_Layer: 5
   m_Name: Empty
   m_TagString: Untagged
@@ -202,19 +201,3 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7429574258253230553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2114269953611616698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51404fc89c6f4dd479fe1783ef88a519, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skill: {fileID: 107513818114617784, guid: b2465d09a732ec74cbfd1a3936497fe6, type: 3}
-  button: {fileID: 2114269953611616700}
-  icon: {fileID: 2114269953611616703}
-  cooldownText: {fileID: 499509580512695805}

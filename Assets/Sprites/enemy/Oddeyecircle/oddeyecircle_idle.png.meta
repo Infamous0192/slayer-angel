@@ -1,34 +1,52 @@
 fileFormatVersion: 2
-guid: e9e24dcd6f776904e84a5f92d39c65fc
+guid: ef806ff879df70547b01359519dd2409
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7462956045856327893
-    second: oddeyecircle_run_0
+      213: -1933459843475313981
+    second: oddeyecircle_idle_0
   - first:
-      213: 8706009849339583734
-    second: oddeyecircle_run_1
+      213: 4575815241986904004
+    second: oddeyecircle_idle_1
   - first:
-      213: -508125764538271349
-    second: oddeyecircle_run_2
+      213: 813780508779043569
+    second: oddeyecircle_idle_2
   - first:
-      213: -1019492438050097185
-    second: oddeyecircle_run_3
+      213: -2854440033107346372
+    second: oddeyecircle_idle_3
   - first:
-      213: -6887927948711799180
-    second: oddeyecircle_run_4
+      213: -2276228799801439498
+    second: oddeyecircle_idle_4
   - first:
-      213: 5731174461192066275
-    second: oddeyecircle_run_5
+      213: 5465903869602212690
+    second: oddeyecircle_idle_5
   - first:
-      213: 4304182614347713535
-    second: oddeyecircle_run_6
+      213: -2328001562385138620
+    second: oddeyecircle_idle_6
   - first:
-      213: -9060242249201293508
-    second: oddeyecircle_run_7
+      213: -7395048467619669764
+    second: oddeyecircle_idle_7
   - first:
-      213: -6128256287521630747
-    second: oddeyecircle_run_8
+      213: -4334389226900103908
+    second: oddeyecircle_idle_8
+  - first:
+      213: -9188402375201600873
+    second: oddeyecircle_idle_9
+  - first:
+      213: -4341743188113374088
+    second: oddeyecircle_idle_10
+  - first:
+      213: -911772211440742511
+    second: oddeyecircle_idle_11
+  - first:
+      213: -6838846187569861417
+    second: oddeyecircle_idle_12
+  - first:
+      213: 8922396695590035596
+    second: oddeyecircle_idle_13
+  - first:
+      213: 4881715791907941789
+    second: oddeyecircle_idle_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -130,7 +148,112 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: oddeyecircle_run_0
+      name: oddeyecircle_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3caeb2a2488fa25e0800000000000000
+      internalID: -1933459843475313981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oddeyecircle_idle_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf827808bf808f30800000000000000
+      internalID: 4575815241986904004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oddeyecircle_idle_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa59e6af012b4b00800000000000000
+      internalID: 813780508779043569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oddeyecircle_idle_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c7bf1d9edf268d0800000000000000
+      internalID: -2854440033107346372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oddeyecircle_idle_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa425077f53960e0800000000000000
+      internalID: -2276228799801439498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oddeyecircle_idle_5
       rect:
         serializedVersion: 2
         x: 0
@@ -144,14 +267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d8ce97bbfeb19760800000000000000
-      internalID: 7462956045856327893
+      spriteID: 25ba21c1c9acadb40800000000000000
+      internalID: 5465903869602212690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_1
+      name: oddeyecircle_idle_6
       rect:
         serializedVersion: 2
         x: 256
@@ -165,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fc10f0e4d5f1d870800000000000000
-      internalID: 8706009849339583734
+      spriteID: 44cba7dc9e641bfd0800000000000000
+      internalID: -2328001562385138620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_2
+      name: oddeyecircle_idle_7
       rect:
         serializedVersion: 2
         x: 512
@@ -186,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b89f87f2f46c2f8f0800000000000000
-      internalID: -508125764538271349
+      spriteID: cf89bbe69928f5990800000000000000
+      internalID: -7395048467619669764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_3
+      name: oddeyecircle_idle_8
       rect:
         serializedVersion: 2
         x: 768
@@ -207,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd7b3d277090ad1f0800000000000000
-      internalID: -1019492438050097185
+      spriteID: c1dd65476f729d3c0800000000000000
+      internalID: -4334389226900103908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_4
+      name: oddeyecircle_idle_9
       rect:
         serializedVersion: 2
         x: 1024
@@ -228,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4765c82460a2960a0800000000000000
-      internalID: -6887927948711799180
+      spriteID: 79ac0c4d8bc3c7080800000000000000
+      internalID: -9188402375201600873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_5
+      name: oddeyecircle_idle_10
       rect:
         serializedVersion: 2
         x: 0
@@ -249,14 +372,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e4d421bec8398f40800000000000000
-      internalID: 5731174461192066275
+      spriteID: 874c78ee2970fb3c0800000000000000
+      internalID: -4341743188113374088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_6
+      name: oddeyecircle_idle_11
       rect:
         serializedVersion: 2
         x: 256
@@ -270,14 +393,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffb8b9088478bbb30800000000000000
-      internalID: 4304182614347713535
+      spriteID: 19f8005210cb853f0800000000000000
+      internalID: -911772211440742511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_7
+      name: oddeyecircle_idle_12
       rect:
         serializedVersion: 2
         x: 512
@@ -291,14 +414,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c37ee557dad834280800000000000000
-      internalID: -9060242249201293508
+      spriteID: 7dc2d5c40a98711a0800000000000000
+      internalID: -6838846187569861417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_8
+      name: oddeyecircle_idle_13
       rect:
         serializedVersion: 2
         x: 768
@@ -312,8 +435,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e518b9106f04faa0800000000000000
-      internalID: -6128256287521630747
+      spriteID: c8063c19588b2db70800000000000000
+      internalID: 8922396695590035596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oddeyecircle_idle_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d6617f5a65fb340800000000000000
+      internalID: 4881715791907941789
       vertices: []
       indices: 
       edges: []

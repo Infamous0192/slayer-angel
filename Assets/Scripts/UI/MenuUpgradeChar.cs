@@ -90,6 +90,7 @@ public class MenuUpgradeChar : MonoBehaviour {
             btnEquipment.image.rectTransform.sizeDelta = new Vector2(253, 58);
             kontenEquip.gameObject.SetActive(false);
             kontenSkill.gameObject.SetActive(true);
+            GameObject.Find("Skill Upgrade").GetComponent<SkillUpgradeController>().RefreshSlot();
         }
     }
 }

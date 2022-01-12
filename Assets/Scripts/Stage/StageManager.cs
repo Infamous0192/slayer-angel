@@ -26,7 +26,7 @@ public class StageManager : MonoBehaviour {
     [Range(0f, 1f)]
     public float[] Checkpoint;
 
-    public float EnemyMultiplier;
+    public int EnemyLevel;
 
     public void AddGold(double gold) {
         GameManager.Instance.Data.Stats.Gold += gold;
@@ -36,6 +36,8 @@ public class StageManager : MonoBehaviour {
     private void Start() {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         GoldText.text = GameManager.Instance.Data.Stats.Gold.ToString("0,0");
+        
+        Debug.Log(EnemyLevel);
     }
 
     private void Update() {

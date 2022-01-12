@@ -14,6 +14,8 @@ public class SkillSlot : MonoBehaviour {
                 if (slot.Skill == Name) {
                     slot.Skill = "";
                     GameObject.Find("Skill Slot").GetComponent<SkillSlotController>().RefreshSlot();
+                    var obj = GameObject.Find("Skill Upgrade");
+                    if (obj != null) obj.GetComponent<SkillUpgradeController>().RefreshSlot();
                 }
             }
         });

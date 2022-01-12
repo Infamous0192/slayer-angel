@@ -1278,7 +1278,7 @@ MonoBehaviour:
   GoldText: {fileID: 28220384}
   StageDistance: 100
   Checkpoint: []
-  EnemyLevel: 1
+  EnemyLevel: 5
 --- !u!4 &450898121
 Transform:
   m_ObjectHideFlags: 0
