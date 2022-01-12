@@ -1,37 +1,34 @@
 fileFormatVersion: 2
-guid: 8cb1d76ebb4a0bd4bb93ade3a571bd7a
+guid: 020080d6539824b4ba80e076623f7740
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8571885603328080912
-    second: spritesheetUItitleScreen_0
+      213: 8309323102110595755
+    second: win_lose_screen_0
   - first:
-      213: -8115289771565886131
-    second: spritesheetUItitleScreen_1
+      213: 1097350086342222593
+    second: win_lose_screen_1
   - first:
-      213: -2118843631149081333
-    second: spritesheetUItitleScreen_2
+      213: -142727963841455676
+    second: win_lose_screen_2
   - first:
-      213: -3778759954917285401
-    second: spritesheetUItitleScreen_3
+      213: 7474616431288368561
+    second: win_lose_screen_3
   - first:
-      213: -3149854678573619381
-    second: spritesheetUItitleScreen_4
+      213: 4742018659058491772
+    second: win_lose_screen_4
   - first:
-      213: 8042876175914055269
-    second: spritesheetUItitleScreen_5
+      213: 3985105665763305863
+    second: win_lose_screen_5
   - first:
-      213: 7824138560395067276
-    second: spritesheetUItitleScreen_6
+      213: -6616111750856910204
+    second: win_lose_screen_6
   - first:
-      213: -6482844949273762613
-    second: spritesheetUItitleScreen_7
+      213: 8665103579691934201
+    second: win_lose_screen_7
   - first:
-      213: 8362711784043094625
-    second: spritesheetUItitleScreen_8
-  - first:
-      213: -7910435343727863919
-    second: spritesheetUItitleScreen_9
+      213: 7534277912100379694
+    second: win_lose_screen_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,18 +115,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -145,13 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheetUItitleScreen_0
+      name: win_lose_screen_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1280
-        width: 1002
-        height: 418
+        y: 2815
+        width: 1051
+        height: 747
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f34856a57b8a0980800000000000000
-      internalID: -8571885603328080912
+      spriteID: baabf313655a05370800000000000000
+      internalID: 8309323102110595755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheetUItitleScreen_1
+      name: win_lose_screen_1
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1675
-        width: 13
-        height: 13
+        x: 1151
+        y: 3199
+        width: 614
+        height: 319
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d45547c03f2b06f80800000000000000
-      internalID: -8115289771565886131
+      spriteID: 1032caae6129a3f00800000000000000
+      internalID: 1097350086342222593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheetUItitleScreen_2
+      name: win_lose_screen_2
       rect:
         serializedVersion: 2
-        x: 1026
-        y: 1630
-        width: 56
-        height: 56
+        x: 1153
+        y: 2815
+        width: 614
+        height: 332
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,144 +186,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0d92ce81fa5892e0800000000000000
-      internalID: -2118843631149081333
+      spriteID: 4c917bf4cade40ef0800000000000000
+      internalID: -142727963841455676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheetUItitleScreen_3
-      rect:
-        serializedVersion: 2
-        x: 1030
-        y: 1539
-        width: 566
-        height: 147
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e12fab77d52f8bc0800000000000000
-      internalID: -3778759954917285401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheetUItitleScreen_4
-      rect:
-        serializedVersion: 2
-        x: 1544
-        y: 1538
-        width: 56
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b476485cbd77944d0800000000000000
-      internalID: -3149854678573619381
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheetUItitleScreen_5
-      rect:
-        serializedVersion: 2
-        x: 1589
-        y: 1536
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5663fcdd4490e9f60800000000000000
-      internalID: 8042876175914055269
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheetUItitleScreen_6
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1407
-        width: 315
-        height: 113
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8fb8cd019ce49c60800000000000000
-      internalID: 7824138560395067276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheetUItitleScreen_7
-      rect:
-        serializedVersion: 2
-        x: 1408
-        y: 1281
-        width: 158
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc42a90cdde4806a0800000000000000
-      internalID: -6482844949273762613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheetUItitleScreen_8
-      rect:
-        serializedVersion: 2
-        x: 1665
-        y: 1280
-        width: 158
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 162acde5f025e0470800000000000000
-      internalID: 8362711784043094625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheetUItitleScreen_9
+      name: win_lose_screen_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 1406
         width: 1920
         height: 1080
       alignment: 0
@@ -348,8 +207,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 197d76657fc783290800000000000000
-      internalID: -7910435343727863919
+      spriteID: 1bdbd33ca0c2bb760800000000000000
+      internalID: 7474616431288368561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_lose_screen_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2558
+        width: 412
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71a47b98d80fc140800000000000000
+      internalID: 4742018659058491772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_lose_screen_5
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 2558
+        width: 415
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789e7303d70fd4730800000000000000
+      internalID: 3985105665763305863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_lose_screen_6
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 2558
+        width: 138
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ad2ef8a69de24a0800000000000000
+      internalID: -6616111750856910204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_lose_screen_7
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 2558
+        width: 137
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1e089cbc1a04870800000000000000
+      internalID: 8665103579691934201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_lose_screen_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c90ddb7d12f8860800000000000000
+      internalID: 7534277912100379694
       vertices: []
       indices: 
       edges: []
