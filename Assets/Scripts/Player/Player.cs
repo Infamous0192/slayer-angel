@@ -24,6 +24,8 @@ public class Player : MonoBehaviour {
         set {
             _currentHealth = value >= MaxHealth ? MaxHealth : value;
             healthBar.SetHealth((int)_currentHealth);
+
+            if (_currentHealth <= 0) IsDead = true;
         }
     }
     #endregion
@@ -44,10 +46,11 @@ public class Player : MonoBehaviour {
 
     #region movement
     [SerializeField] private int _movementSpeed = 300;
-    public float MovementSpeed => IsAttacking || HasAction ? 0 : _movementSpeed;
+    public float MovementSpeed => IsAttacking || HasAction || IsDead ? 0 : _movementSpeed;
     #endregion
 
     #region behaviour
+    private bool _isDead = false;
     private bool _isAttacking = false;
     public bool HasAction = false;
     public bool IsAttacking {
@@ -62,13 +65,19 @@ public class Player : MonoBehaviour {
             }
         }
     }
+    public bool IsDead {
+        get => _isDead;
+        set {
+            if (_isDead == value) return;
+            _isDead = value;
+            if (_isDead == true) {
+                StartCoroutine(Dead());
+            }
+        }
+    }
     #endregion
 
     private Animator animator;
-
-    public void TakeDamage(int damage) {
-        CurrentHealth -= damage;
-    }
 
     private void Start() {
         animator = GetComponent<Animator>();
@@ -84,12 +93,19 @@ public class Player : MonoBehaviour {
     }
 
     private void FixedUpdate() {
+        if (IsDead) return;
         RaycastHit2D hitObstacle = Physics2D.Raycast(transform.position, Vector2.right, 1f);
 
         CurrentHealth += HealthRegen * Time.fixedDeltaTime;
         CurrentMana += ManaRegen * Time.fixedDeltaTime;
 
         IsAttacking = hitObstacle.collider != null && hitObstacle.collider.tag == "Enemy";
+    }
+
+    private IEnumerator Dead() {
+        animator.Play("mc_death");
+        yield return new WaitForSeconds(1f);
+        StageManager.Instance.LoadLoseScreen();
     }
 
     private void Attack() {
@@ -110,5 +126,6 @@ public class Player : MonoBehaviour {
         foreach (Collider2D enemy in enemies) {
             enemy.GetComponent<Enemy>().TakeDamage(damage);
         }
+        yield return new WaitForSeconds(0.1f);
     }
 }

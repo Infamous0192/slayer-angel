@@ -112,7 +112,7 @@ public class Enemy : MonoBehaviour {
     private void AttackPlayer() {
         attackPeriod += Time.deltaTime;
         if (attackPeriod > AttackInterval) {
-            player.TakeDamage((int)AttackPower);
+            player.CurrentHealth -= AttackPower;
             animator.SetTrigger("Attack");
             attackPeriod = 0;
         }

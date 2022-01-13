@@ -6996,6 +6996,7 @@ MonoBehaviour:
     Description: Once upon time, a mysterious portal appeared and terrible creatures
       came out
     Distance: 1000
+    Checkpoint: []
     IsUnlocked: 1
     Reward:
     - {fileID: 3693651345976912356, guid: 8b230c470118edd4285737b4728093d6, type: 3}
@@ -7005,6 +7006,7 @@ MonoBehaviour:
     Description: Once upon time, a mysterious portal appeared and terrible creatures
       came out
     Distance: 1000
+    Checkpoint: []
     IsUnlocked: 1
     Reward:
     - {fileID: 3693651345976912356, guid: 8b230c470118edd4285737b4728093d6, type: 3}
@@ -7098,7 +7100,28 @@ MonoBehaviour:
       Skill: 
     - IsUnlocked: 0
       Skill: 
-    Stage: []
+    Stage:
+    - SceneName: Stage 1-1
+      Name: Stage 1-1
+      Title: Planet Utopia
+      Description: Once upon time, a mysterious portal appeared and terrible creatures
+        came out
+      Distance: 100
+      Checkpoint:
+      - 0.5
+      IsUnlocked: 1
+      Reward:
+      - {fileID: 3693651345976912356, guid: 8b230c470118edd4285737b4728093d6, type: 3}
+    - SceneName: Stage 1-2
+      Name: Stage 1-2
+      Title: Planet Utopia
+      Description: Once upon time, a mysterious portal appeared and terrible creatures
+        came out
+      Distance: 150
+      Checkpoint: []
+      IsUnlocked: 1
+      Reward:
+      - {fileID: 3693651345976912356, guid: 8b230c470118edd4285737b4728093d6, type: 3}
 --- !u!1 &1544901062
 GameObject:
   m_ObjectHideFlags: 0

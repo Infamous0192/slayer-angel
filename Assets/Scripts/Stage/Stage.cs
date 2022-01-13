@@ -7,6 +7,7 @@ public class Stage {
     public string Title;
     public string Description;
     public double Distance;
+    public float Checkpoint;
     public bool IsUnlocked;
     public GameObject[] Reward;
 }
