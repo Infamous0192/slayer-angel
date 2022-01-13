@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour {
     private void Start() {
         // Load();
         // InvokeRepeating("Save", 0, 5f);
-        Data = new SaveData();
+        // Data = new SaveData();
     }
 
     private void Load() {

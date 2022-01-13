@@ -247,8 +247,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846281d8a894b0842beb5bc812a771cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  box: {fileID: 0}
-  player: {fileID: 0}
   depth: 1
 --- !u!1 &335314271
 GameObject:
@@ -651,7 +649,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1760505661
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 683f4b831919fc54584179e9e484bf43, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -661,7 +659,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &642807452
@@ -690,13 +688,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae2cae9fe8e4fb040aca69374bd5afe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementSpeed: 1
-  RightButton: 275
-  LeftButton: 276
-  SpaceButton: 32
-  maxHealth: 100
-  currentHealth: 0
+  AttackPower: 0
+  AttackSpeed: 0
+  _attackInterval: 0
+  AttackRange: 0
+  AttackStability: 0
   healthBar: {fileID: 515642010}
+  MaxHealth: 0
+  HealthRegen: 0
+  manaBar: {fileID: 0}
+  MaxMana: 0
+  ManaRegen: 0
+  _movementSpeed: 300
+  HasAction: 0
 --- !u!1 &657745078
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,8 +983,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846281d8a894b0842beb5bc812a771cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  box: {fileID: 0}
-  player: {fileID: 0}
   depth: 10
 --- !u!61 &836314611
 BoxCollider2D:
@@ -1195,8 +1197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846281d8a894b0842beb5bc812a771cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  box: {fileID: 0}
-  player: {fileID: 0}
   depth: 0.2
 --- !u!61 &1313371765
 BoxCollider2D:
@@ -6476,8 +6476,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846281d8a894b0842beb5bc812a771cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  box: {fileID: 0}
-  player: {fileID: 0}
   depth: 4
 --- !u!61 &1682150387
 BoxCollider2D:

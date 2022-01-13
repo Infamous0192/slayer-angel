@@ -1,73 +1,64 @@
 fileFormatVersion: 2
-guid: 92d8afc451f58d94cbc5b8bf5a5db975
+guid: 934b94da178bfc84b99e818f4f6411f1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7462956045856327893
-    second: oddeyecircle_run_0
+      213: 2391286248729534601
+    second: mc_death_0
   - first:
-      213: 8706009849339583734
-    second: oddeyecircle_run_1
+      213: -7518251221160230519
+    second: mc_death_1
   - first:
-      213: -508125764538271349
-    second: oddeyecircle_run_2
+      213: 8816772300825500893
+    second: mc_death_2
   - first:
-      213: -1019492438050097185
-    second: oddeyecircle_run_3
+      213: 2778326160795710247
+    second: mc_death_3
   - first:
-      213: -6887927948711799180
-    second: oddeyecircle_run_4
+      213: -105898238065978710
+    second: mc_death_4
   - first:
-      213: 5731174461192066275
-    second: oddeyecircle_run_5
+      213: -1216239966308122793
+    second: mc_death_5
   - first:
-      213: 4304182614347713535
-    second: oddeyecircle_run_6
+      213: -5402532733301293969
+    second: mc_death_6
   - first:
-      213: -9060242249201293508
-    second: oddeyecircle_run_7
+      213: -4039207660053716305
+    second: mc_death_7
   - first:
-      213: -6128256287521630747
-    second: oddeyecircle_run_8
+      213: 4907873014311726782
+    second: mc_death_8
   - first:
-      213: 4590794522268545833
-    second: oddeyecircle_run_9
+      213: 8273618054075326492
+    second: mc_death_9
   - first:
-      213: -986021637957910163
-    second: oddeyecircle_run_10
+      213: 8816803149627125105
+    second: mc_death_10
   - first:
-      213: -2480847354729078298
-    second: oddeyecircle_run_11
+      213: -7541017177720412042
+    second: mc_death_11
   - first:
-      213: 4706545467675575364
-    second: oddeyecircle_run_12
+      213: 5366472441169092812
+    second: mc_death_12
   - first:
-      213: -4137924984766628611
-    second: oddeyecircle_run_13
+      213: -6212784107033431980
+    second: mc_death_13
   - first:
-      213: 7989797532454438319
-    second: oddeyecircle_run_14
+      213: 969955987430377711
+    second: mc_death_14
   - first:
-      213: 7206348955556825156
-    second: oddeyecircle_run_15
+      213: 6189799789713466357
+    second: mc_death_15
   - first:
-      213: -3707977455170409799
-    second: oddeyecircle_run_16
+      213: -4855407458972525627
+    second: mc_death_16
   - first:
-      213: -5357147886481786698
-    second: oddeyecircle_run_17
+      213: 5713401976351882888
+    second: mc_death_17
   - first:
-      213: 324678704003553562
-    second: oddeyecircle_run_18
-  - first:
-      213: 249171216293881545
-    second: oddeyecircle_run_19
-  - first:
-      213: -6108498903817577426
-    second: oddeyecircle_run_20
-  - first:
-      213: -7985477419647957550
-    second: oddeyecircle_run_21
+      213: 2216925430742681795
+    second: mc_death_18
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -169,112 +160,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: oddeyecircle_run_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d8ce97bbfeb19760800000000000000
-      internalID: 7462956045856327893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: oddeyecircle_run_1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6fc10f0e4d5f1d870800000000000000
-      internalID: 8706009849339583734
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: oddeyecircle_run_2
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b89f87f2f46c2f8f0800000000000000
-      internalID: -508125764538271349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: oddeyecircle_run_3
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd7b3d277090ad1f0800000000000000
-      internalID: -1019492438050097185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: oddeyecircle_run_4
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4765c82460a2960a0800000000000000
-      internalID: -6887927948711799180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: oddeyecircle_run_5
+      name: mc_death_0
       rect:
         serializedVersion: 2
         x: 0
@@ -288,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e4d421bec8398f40800000000000000
-      internalID: 5731174461192066275
+      spriteID: 980ecc37c2e8f2120800000000000000
+      internalID: 2391286248729534601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_6
+      name: mc_death_1
       rect:
         serializedVersion: 2
         x: 256
@@ -309,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffb8b9088478bbb30800000000000000
-      internalID: 4304182614347713535
+      spriteID: 9810996095ec9a790800000000000000
+      internalID: -7518251221160230519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_7
+      name: mc_death_2
       rect:
         serializedVersion: 2
         x: 512
@@ -330,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c37ee557dad834280800000000000000
-      internalID: -9060242249201293508
+      spriteID: ddc1530c1b77b5a70800000000000000
+      internalID: 8816772300825500893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_8
+      name: mc_death_3
       rect:
         serializedVersion: 2
         x: 768
@@ -351,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e518b9106f04faa0800000000000000
-      internalID: -6128256287521630747
+      spriteID: 723376c4ce89e8620800000000000000
+      internalID: 2778326160795710247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_9
+      name: mc_death_4
       rect:
         serializedVersion: 2
         x: 1024
@@ -372,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92330a08b47c5bf30800000000000000
-      internalID: 4590794522268545833
+      spriteID: aa2dcb11d16c78ef0800000000000000
+      internalID: -105898238065978710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_10
+      name: mc_death_5
       rect:
         serializedVersion: 2
         x: 0
@@ -393,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d618ba06b82f052f0800000000000000
-      internalID: -986021637957910163
+      spriteID: 75f329ec13c0f1fe0800000000000000
+      internalID: -1216239966308122793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_11
+      name: mc_death_6
       rect:
         serializedVersion: 2
         x: 256
@@ -414,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e1e7679972429dd0800000000000000
-      internalID: -2480847354729078298
+      spriteID: f6cf7285a195605b0800000000000000
+      internalID: -5402532733301293969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_12
+      name: mc_death_7
       rect:
         serializedVersion: 2
         x: 512
@@ -435,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4440700aa22015140800000000000000
-      internalID: 4706545467675575364
+      spriteID: fa22678a80ad1f7c0800000000000000
+      internalID: -4039207660053716305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_13
+      name: mc_death_8
       rect:
         serializedVersion: 2
         x: 768
@@ -456,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfc75c766232396c0800000000000000
-      internalID: -4137924984766628611
+      spriteID: ebea6c4e0844c1440800000000000000
+      internalID: 4907873014311726782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_14
+      name: mc_death_9
       rect:
         serializedVersion: 2
         x: 1024
@@ -477,14 +363,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa54d35268671ee60800000000000000
-      internalID: 7989797532454438319
+      spriteID: c102b60e8cbc1d270800000000000000
+      internalID: 8273618054075326492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_15
+      name: mc_death_10
       rect:
         serializedVersion: 2
         x: 0
@@ -498,14 +384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 448c877b138120460800000000000000
-      internalID: 7206348955556825156
+      spriteID: 17de11c40c39b5a70800000000000000
+      internalID: 8816803149627125105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_16
+      name: mc_death_11
       rect:
         serializedVersion: 2
         x: 256
@@ -519,14 +405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ba2965762e9a8cc0800000000000000
-      internalID: -3707977455170409799
+      spriteID: 6782bd4b4dce85790800000000000000
+      internalID: -7541017177720412042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_17
+      name: mc_death_12
       rect:
         serializedVersion: 2
         x: 512
@@ -540,14 +426,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b8b401716697a5b0800000000000000
-      internalID: -5357147886481786698
+      spriteID: cc0aec0a04a897a40800000000000000
+      internalID: 5366472441169092812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_18
+      name: mc_death_13
       rect:
         serializedVersion: 2
         x: 768
@@ -561,14 +447,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a191442af8d718400800000000000000
-      internalID: 324678704003553562
+      spriteID: 450741a75c1c7c9a0800000000000000
+      internalID: -6212784107033431980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_19
+      name: mc_death_14
       rect:
         serializedVersion: 2
         x: 1024
@@ -582,14 +468,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c6e27ba6eb357300800000000000000
-      internalID: 249171216293881545
+      spriteID: fe80d8ed4d9f57d00800000000000000
+      internalID: 969955987430377711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_20
+      name: mc_death_15
       rect:
         serializedVersion: 2
         x: 0
@@ -603,14 +489,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2c17177c904a3ba0800000000000000
-      internalID: -6108498903817577426
+      spriteID: 5f3a8a02d1696e550800000000000000
+      internalID: 6189799789713466357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: oddeyecircle_run_21
+      name: mc_death_16
       rect:
         serializedVersion: 2
         x: 256
@@ -624,8 +510,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d50bff7892ed2190800000000000000
-      internalID: -7985477419647957550
+      spriteID: 5cb192024a02e9cb0800000000000000
+      internalID: -4855407458972525627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_death_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ef77b93d41a4f40800000000000000
+      internalID: 5713401976351882888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc_death_18
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c882f8fee914ce10800000000000000
+      internalID: 2216925430742681795
       vertices: []
       indices: 
       edges: []

@@ -4,18 +4,37 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class StageProgressionBar : MonoBehaviour {
-    public Slider ProgressBar;
-    // public Sprite Flag;
+    [SerializeField] private GameObject border;
+    [SerializeField] private GameObject flagPrefabs;
+
+    private Slider progressBar;
+    private RectTransform container;
+
+
+    public void SetValue(float value) {
+        if (progressBar.value != value)
+            progressBar.value = value;
+    }
 
     private void Start() {
-        ProgressBar.maxValue = (float)StageManager.Instance.StageDistance;
-        ProgressBar.value = (float)GameManager.Instance.Progress.RunDistance;
-        // Vector2 pos = ProgressBar.transform.position;
+        progressBar = GetComponent<Slider>();
+        container = border.GetComponent<RectTransform>();
+        progressBar.maxValue = (float)StageManager.Instance.StageDistance;
+        progressBar.value = (float)GameManager.Instance.Progress.RunDistance;
 
-        // Instantiate(Flag, pos, Quaternion.identity);
+        float[] checkpoint = StageManager.Instance.Checkpoint;
+
+        float width = container.rect.width;
+
+        foreach (float item in checkpoint) {
+            GameObject flag = Instantiate(flagPrefabs, container);
+            RectTransform rect = flag.GetComponent<RectTransform>();
+
+            rect.anchoredPosition = new Vector2(container.rect.width * item, rect.anchoredPosition.y);
+        }
     }
 
     private void Update() {
-        ProgressBar.value = (float)GameManager.Instance.Progress.RunDistance;
+        SetValue((float)StageManager.Instance.PlayerDistance);
     }
 }

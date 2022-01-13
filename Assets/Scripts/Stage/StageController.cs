@@ -5,8 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class StageController : MonoBehaviour {
-    public Stage[] Stage;
-
     [SerializeField] private Text NameText;
     [SerializeField] private Text TitleText;
     [SerializeField] private Text DescriptionText;
@@ -17,35 +15,37 @@ public class StageController : MonoBehaviour {
 
     [SerializeField] private GameObject RewardContainer;
 
+    private Stage[] stage;
     private int index = 0;
 
     private void Start() {
+        stage = GameManager.Instance.Data.Stage;
         LoadStage(index);
 
         PreviousButton.onClick.AddListener(() => {
             if (index > 0) LoadStage(--index);
         });
         NextButton.onClick.AddListener(() => {
-            if (index < Stage.Length - 1) {
+            if (index < stage.Length - 1) {
                 LoadStage(++index);
             }
         });
     }
 
     private void LoadStage(int index) {
-        NameText.text = Stage[index].Name;
-        TitleText.text = Stage[index].Title;
-        DescriptionText.text = Stage[index].Description;
+        NameText.text = stage[index].Name;
+        TitleText.text = stage[index].Title;
+        DescriptionText.text = stage[index].Description;
         PlayButton.onClick.RemoveAllListeners();
 
         PlayButton.onClick.AddListener(() => {
-            SceneManager.LoadScene(Stage[index].SceneName);
+            SceneManager.LoadScene(stage[index].SceneName);
         });
 
         foreach (Transform child in RewardContainer.transform) {
             Destroy(child.gameObject);
         }
 
-        Instantiate(Stage[index].Reward[0], RewardContainer.transform.position, Quaternion.identity, RewardContainer.transform);
+        Instantiate(stage[index].Reward[0], RewardContainer.transform.position, Quaternion.identity, RewardContainer.transform);
     }
 }
