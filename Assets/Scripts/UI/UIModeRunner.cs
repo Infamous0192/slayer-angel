@@ -28,6 +28,7 @@ public class UIModeRunner : MonoBehaviour {
   void Start() {
     btnBackStarship.onClick.AddListener(() => {
       promptExit.SetActive(true);
+      promptOption.SetActive(false);
     });
 
     btnCancelBackSs.onClick.AddListener(() => {
@@ -43,6 +44,7 @@ public class UIModeRunner : MonoBehaviour {
 
     btnVolume.onClick.AddListener(() => {
       promptOption.SetActive(true);
+      promptExit.SetActive(false);
     });
 
 
