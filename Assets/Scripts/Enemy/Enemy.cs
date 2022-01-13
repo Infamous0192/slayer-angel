@@ -82,7 +82,7 @@ public class Enemy : MonoBehaviour {
         BoxCollider2D ground = GameObject.Find("Ground").GetComponent<BoxCollider2D>();
         float groundTop = ground.transform.position.y + (ground.size.y / 2);
 
-        transform.position = new Vector2(transform.position.x, groundTop + (box.size.y / 2));
+        transform.position = new Vector2(transform.position.x, groundTop + (box.size.y * box.transform.localScale.y / 2));
 
         int enemyLevel = StageManager.Instance.EnemyLevel;
 

@@ -30,7 +30,7 @@ public class StageProgressionBar : MonoBehaviour {
             GameObject flag = Instantiate(flagPrefabs, container);
             RectTransform rect = flag.GetComponent<RectTransform>();
 
-            rect.anchoredPosition = new Vector2(container.rect.width * item, rect.anchoredPosition.y);
+            rect.anchoredPosition = new Vector2((container.rect.width * item) + (rect.rect.width / 2), rect.anchoredPosition.y);
         }
     }
 

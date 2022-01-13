@@ -29,7 +29,6 @@ public class EnemySpawner : MonoBehaviour {
     }
 
     private IEnumerator SpawnEnemy(int count) {
-        float groundTop = ground.transform.position.y + (ground.size.y / 2);
         for (int i = 0; i < count; i++) {
             yield return new WaitForSeconds(.75f);
             GameObject obj = Instantiate(enemy, transform);

@@ -67,6 +67,7 @@ public class StageManager : MonoBehaviour {
 
     private void Start() {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        GoldText.text = GameManager.Instance.Data.Stats.Gold.ToString("0,0");
         LoadStage();
     }
 
