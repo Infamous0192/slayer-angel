@@ -30,7 +30,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.78333336
+        time: 0.76666665
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -48,7 +48,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1.0833334
+        time: 1.0666666
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -62,7 +62,7 @@ AnimationClip:
     attribute: IsAttack
     path: 
     classID: 114
-    script: {fileID: 11500000, guid: c7c21d708d42b3443b0d0116cdae258d, type: 3}
+    script: {fileID: 11500000, guid: fd64d23741ece0e4a94347ac557d6fe7, type: 3}
   m_PPtrCurves:
   - curve:
     - time: 0
@@ -157,7 +157,7 @@ AnimationClip:
     - serializedVersion: 2
       path: 0
       attribute: 2145273271
-      script: {fileID: 11500000, guid: c7c21d708d42b3443b0d0116cdae258d, type: 3}
+      script: {fileID: 11500000, guid: fd64d23741ece0e4a94347ac557d6fe7, type: 3}
       typeID: 114
       customType: 0
       isPPtrCurve: 0
@@ -200,7 +200,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.0833334
+    m_StopTime: 1.0666666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -229,7 +229,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.78333336
+        time: 0.76666665
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -247,7 +247,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 1.0833334
+        time: 1.0666666
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -261,7 +261,7 @@ AnimationClip:
     attribute: IsAttack
     path: 
     classID: 114
-    script: {fileID: 11500000, guid: c7c21d708d42b3443b0d0116cdae258d, type: 3}
+    script: {fileID: 11500000, guid: fd64d23741ece0e4a94347ac557d6fe7, type: 3}
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0

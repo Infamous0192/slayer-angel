@@ -1300,7 +1300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StageName: Stage 1-2
   StageDistance: 100
-  EnemyLevel: 6
+  EnemyLevel: 5
   Checkpoint:
   - 0.4
   - 0.8
@@ -7350,6 +7350,7 @@ MonoBehaviour:
   ManaRegen: 5
   _movementSpeed: 300
   HasAction: 0
+  IsBossMode: 0
 --- !u!1 &1877592840
 GameObject:
   m_ObjectHideFlags: 0

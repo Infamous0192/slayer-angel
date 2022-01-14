@@ -7098,6 +7098,15 @@ MonoBehaviour:
       IsUnlocked: 1
       Reward:
       - {fileID: 3693651345976912356, guid: 8b230c470118edd4285737b4728093d6, type: 3}
+    - SceneName: Stage Boss
+      Name: Stage Boss
+      Title: Zombie Paradise
+      Description: Sample boss mode
+      Distance: 0
+      Checkpoint: 0
+      IsUnlocked: 1
+      Reward:
+      - {fileID: 3693651345976912356, guid: 8b230c470118edd4285737b4728093d6, type: 3}
 --- !u!1 &1544901062
 GameObject:
   m_ObjectHideFlags: 0

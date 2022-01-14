@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SkillButton : MonoBehaviour {
+public class SkillButtonBoss : MonoBehaviour {
     [SerializeField] private Skill skill;
     [SerializeField] private Button button;
     [SerializeField] private Image icon;
@@ -26,10 +26,10 @@ public class SkillButton : MonoBehaviour {
         }
     }
 
-    private Player player;
+    private PlayerBoss player;
 
     private void Start() {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBoss>();
 
         button.onClick.AddListener(() => {
             if (cooldown <= 0 && player.CurrentMana >= skill.ManaCost && !player.HasAction) {

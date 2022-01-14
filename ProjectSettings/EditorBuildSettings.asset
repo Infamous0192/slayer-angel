@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage/Stage 2-1.unity
     guid: dac873eab3eef7047906fdb1f12b937a
   - enabled: 1
+    path: Assets/Scenes/Stage/Stage Boss.unity
+    guid: 031864269db853f408801a763c102785
+  - enabled: 1
     path: Assets/Scenes/LoseScreen.unity
     guid: ba7792b71a8530546aa6cb2bb9d6e363
   - enabled: 1

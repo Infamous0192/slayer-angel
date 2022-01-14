@@ -15,7 +15,7 @@ public class EnemyBoss : MonoBehaviour {
     #endregion
 
     #region health
-    // [SerializeField] private 
+    [SerializeField] private HealthBar healthBar;
     public double BaseHealth;
     public float HealthMultiplier;
     private double _currentHealth;
@@ -23,6 +23,7 @@ public class EnemyBoss : MonoBehaviour {
         get => _currentHealth;
         set {
             _currentHealth = value;
+            healthBar.SetHealth((float)value);
         }
     }
     private double _maxHealth;
@@ -62,12 +63,13 @@ public class EnemyBoss : MonoBehaviour {
     private double goldYield;
     #endregion
 
-    private PlayerBoss player;
+    private Player player;
     private BoxCollider2D box;
     private Rigidbody2D rb2d;
     private Animator animator;
 
     public void TakeDamage(double damage) {
+        if (_currentHealth <= 0) return;
         CurrentHealth -= damage;
         if (_currentHealth <= 0) animator.SetTrigger("Dead");
     }
@@ -76,7 +78,7 @@ public class EnemyBoss : MonoBehaviour {
         animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         box = GetComponent<BoxCollider2D>();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBoss>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 
         int enemyLevel = StageManager.Instance.EnemyLevel;
 
@@ -84,6 +86,7 @@ public class EnemyBoss : MonoBehaviour {
 
         _maxHealth = BaseHealth * Mathf.Pow(HealthMultiplier, enemyLevel);
         _currentHealth = _maxHealth;
+        healthBar.SetMaxHealth((float)_maxHealth);
     }
 
     private void FixedUpdate() {
@@ -94,6 +97,7 @@ public class EnemyBoss : MonoBehaviour {
 
     private void Dead() {
         StageManager.Instance.AddGold(BaseGoldYield);
+        StageManager.Instance.LoadWinScreen();
         Destroy(gameObject);
     }
 

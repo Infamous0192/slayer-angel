@@ -60,6 +60,7 @@ public class Player : MonoBehaviour {
     private bool _isDead = false;
     private bool _isAttacking = false;
     public bool HasAction = false;
+    public bool IsBossMode = false;
     public bool IsAttacking {
         get => _isAttacking;
         set {
@@ -139,7 +140,8 @@ public class Player : MonoBehaviour {
         double damage = Random.Range((float)(AttackPower * AttackStability), (float)AttackPower);
 
         foreach (Collider2D enemy in enemies) {
-            enemy.GetComponent<Enemy>().TakeDamage(damage);
+            if (IsBossMode) enemy.GetComponent<EnemyBoss>().TakeDamage(damage);
+            else enemy.GetComponent<Enemy>().TakeDamage(damage);
         }
         yield return new WaitForSeconds(0.1f);
     }

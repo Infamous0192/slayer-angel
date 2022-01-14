@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class AuraCharge : Skill {
     public float Duration;
+    public float BaseRegen;
+
+    private float regen;
 
     public override void OnStart() {
         transform.position = new Vector2(player.transform.position.x - 0.1f, player.transform.position.y);
-        StartCoroutine(Action());
+        foreach (Skills skill in GameManager.Instance.Data.Skill) {
+            if (skill.Name == this.Name) {
+                regen = skill.Level * BaseRegen;
+                StartCoroutine(Action());
+                return;
+            }
+        }
     }
 
     private IEnumerator Action() {
@@ -16,7 +25,7 @@ public class AuraCharge : Skill {
         player.HasAction = true;
         double baseRegen = player.HealthRegen;
         yield return new WaitForSeconds(1.95f);
-        player.HealthRegen = baseRegen + 20f;
+        player.HealthRegen = regen;
         player.HasAction = false;
         yield return new WaitForSeconds(Duration);
         player.HealthRegen = baseRegen;

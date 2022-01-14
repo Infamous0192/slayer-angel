@@ -122,3 +122,4 @@ MonoBehaviour:
   player: {fileID: 0}
   animator: {fileID: 0}
   Duration: 5
+  BaseRegen: 10

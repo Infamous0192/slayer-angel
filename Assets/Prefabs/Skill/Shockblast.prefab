@@ -76,4 +76,4 @@ MonoBehaviour:
   player: {fileID: 0}
   animator: {fileID: 0}
   effect: {fileID: 653296799372029194, guid: 1da1c746de3992f4bacef2c9ed5376eb, type: 3}
-  Damage: 200
+  BaseDamage: 200

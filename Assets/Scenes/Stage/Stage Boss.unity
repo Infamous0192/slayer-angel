@@ -897,6 +897,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5642474166113441761, guid: af7b2c1d2d646b842ad0d0aad4fde962,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5642474166345453286, guid: af7b2c1d2d646b842ad0d0aad4fde962,
         type: 3}
       propertyPath: m_RootOrder
@@ -905,7 +910,7 @@ PrefabInstance:
     - target: {fileID: 5642474166345453286, guid: af7b2c1d2d646b842ad0d0aad4fde962,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.67
+      value: 6.76
       objectReference: {fileID: 0}
     - target: {fileID: 5642474166345453286, guid: af7b2c1d2d646b842ad0d0aad4fde962,
         type: 3}
@@ -1224,7 +1229,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 256165702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c285a4383f36a64b9f284df59eb2fc8, type: 3}
+  m_Script: {fileID: 11500000, guid: 846281d8a894b0842beb5bc812a771cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   depth: 1
@@ -1310,16 +1315,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd64d23741ece0e4a94347ac557d6fe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BaseAttackPower: 1000
+  BaseAttackPower: 100
   AttackMultipier: 1
   AttackRange: 2
-  AttackSpeed: 300
-  BaseHealth: 300
-  HealthMultiplier: 2
+  AttackSpeed: 200
+  healthBar: {fileID: 1452425956}
+  BaseHealth: 5000
+  HealthMultiplier: 1
   IsDead: 0
   IsAttack: 0
   _movementSpeed: 200
-  BaseGoldYield: 1000
+  BaseGoldYield: 5000
 --- !u!1 &277879310
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,20 +1652,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450898119}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a8ad9d43df1ae94aa6dbb5794a83a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StageName: 
+  StageName: Stage Boss
   StageDistance: 100
-  EnemyLevel: 0
-  Checkpoint: []
+  EnemyLevel: 1
+  Checkpoint:
+  - 0.5
   DistanceText: {fileID: 1821462846}
   GoldText: {fileID: 28220384}
-  bgmRunner: {fileID: 0}
-  bgmLose: {fileID: 0}
-  bgmWin: {fileID: 0}
+  bgmRunner: {fileID: 1133232841}
+  bgmLose: {fileID: 168835992}
+  bgmWin: {fileID: 1408366806}
   stage:
     SceneName: 
     Name: 
@@ -11309,7 +11316,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1835312234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f98ebb1cef7aeb1439c8d3be1aa4f9fd, type: 3}
+  m_Script: {fileID: 11500000, guid: ae2cae9fe8e4fb040aca69374bd5afe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   soundDead: {fileID: 1921319021}
@@ -11325,8 +11332,9 @@ MonoBehaviour:
   manaBar: {fileID: 1227137151}
   MaxMana: 0
   ManaRegen: 0.5
-  IsKnockback: 1
+  _movementSpeed: 300
   HasAction: 0
+  IsBossMode: 1
 --- !u!1 &1906176169
 GameObject:
   m_ObjectHideFlags: 0

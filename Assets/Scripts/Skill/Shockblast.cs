@@ -6,15 +6,26 @@ public class Shockblast : Skill {
     [SerializeField] private GameObject effect;
     private bool isTriggered = false;
 
-    public float Damage = 200;
+    public float BaseDamage;
+    private float damage;
 
     public override void OnStart() {
-        StartCoroutine(Action());
+        foreach (Skills skill in GameManager.Instance.Data.Skill) {
+            if (skill.Name == this.Name) {
+                damage = skill.Level * BaseDamage;
+                StartCoroutine(Action());
+                return;
+            }
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collider) {
         if (isTriggered) {
-            collider.GetComponent<Enemy>().TakeDamage(Damage * Time.deltaTime);
+            try {
+                collider.GetComponent<Enemy>().TakeDamage(damage * Time.deltaTime);
+            } catch (System.Exception) {
+                collider.GetComponent<EnemyBoss>().TakeDamage(damage * Time.deltaTime);
+            }
         }
     }
 

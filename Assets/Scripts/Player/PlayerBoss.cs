@@ -135,7 +135,6 @@ public class PlayerBoss : MonoBehaviour {
         Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, AttackRange);
 
         foreach (Collider2D enemy in enemies) {
-            // Debug.Log(enemy.name);
             enemy.GetComponent<EnemyBoss>().TakeDamage(AttackPower);
         }
 
