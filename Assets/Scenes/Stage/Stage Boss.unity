@@ -1356,16 +1356,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450898119}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a8ad9d43df1ae94aa6dbb5794a83a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StageName: 
+  StageDistance: 100
+  EnemyLevel: 0
+  Checkpoint: []
   DistanceText: {fileID: 1821462846}
   GoldText: {fileID: 28220384}
-  StageDistance: 100
-  Checkpoint: []
-  EnemyLevel: 0
+  stage:
+    SceneName: 
+    Name: 
+    Title: 
+    Description: 
+    Distance: 0
+    Checkpoint: 0
+    IsUnlocked: 0
+    Reward: []
 --- !u!4 &450898121
 Transform:
   m_ObjectHideFlags: 0
@@ -3022,6 +3032,7 @@ GameObject:
   - component: {fileID: 1286540334}
   - component: {fileID: 1286540337}
   - component: {fileID: 1286540336}
+  - component: {fileID: 1286540335}
   m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
@@ -3048,6 +3059,27 @@ RectTransform:
   m_AnchoredPosition: {x: 5.8371887, y: 1.5000305}
   m_SizeDelta: {x: 0.2841, y: -3}
   m_Pivot: {x: 0.2, y: 0.5}
+--- !u!223 &1286540335
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286540333}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 1
+  m_TargetDisplay: 0
 --- !u!114 &1286540336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9051,12 +9083,12 @@ Canvas:
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
-  m_OverrideSorting: 0
+  m_OverrideSorting: 1
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &1590366641
 MonoBehaviour:
