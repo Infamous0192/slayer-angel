@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
+    //SoundFX
+    [SerializeField]
+    private AudioSource soundDead;
+    [SerializeField]
+    private AudioSource soundAttack;
+
+
     #region attack
     public double AttackPower;
     public float AttackSpeed;
@@ -110,6 +117,7 @@ public class Player : MonoBehaviour {
 
     private IEnumerator Dead() {
         animator.Play("mc_death");
+        soundDead.Play();
         yield return new WaitForSeconds(1f);
         StageManager.Instance.LoadLoseScreen();
     }
@@ -125,6 +133,7 @@ public class Player : MonoBehaviour {
 
     private IEnumerator AttackEnemies() {
         animator.SetTrigger("Attack");
+        soundAttack.Play();
         yield return new WaitForSeconds(0.2f);
         Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, AttackRange);
         double damage = Random.Range((float)(AttackPower * AttackStability), (float)AttackPower);
