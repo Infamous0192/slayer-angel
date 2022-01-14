@@ -49,7 +49,6 @@ public class Enemy : MonoBehaviour {
             }
         }
     }
-    private bool isDead => _currentHealth <= 0;
     #endregion
 
     #region movement
@@ -95,18 +94,17 @@ public class Enemy : MonoBehaviour {
     }
 
     private void FixedUpdate() {
-        if (isDead) Destroy(gameObject);
-
         IsAttacking = IsPlayerAhead();
     }
 
     private void Dead() {
+        animator.SetTrigger("Death");
         StageManager.Instance.AddGold(BaseGoldYield);
-        Destroy(gameObject);
+        Destroy(gameObject, animator.GetCurrentAnimatorStateInfo(0).length);
     }
 
     private bool IsPlayerAhead() {
-        return Vector2.Distance(transform.position, player.transform.position) <= AttackRange + 0.5f;
+        return Vector2.Distance(transform.position, player.transform.position) <= AttackRange;
     }
 
     private void AttackPlayer() {

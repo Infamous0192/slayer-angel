@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4e9c19fb37be49b40badbd396d8d4fe8
+guid: bedd5f47b83e57b49808f8f8923d3c84
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -101,12 +101,6 @@ TextureImporter:
   - first:
       213: 1098564355353163612
     second: oddeyecircle_attack_32
-  - first:
-      213: -2618352525821650401
-    second: oddeyecircle_attack_33
-  - first:
-      213: -2465474455409169097
-    second: oddeyecircle_attack_34
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -896,48 +890,6 @@ TextureImporter:
       bones: []
       spriteID: c573bb3f572ee3f00800000000000000
       internalID: 1098564355353163612
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: oddeyecircle_attack_33
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1a57a9104eb9abd0800000000000000
-      internalID: -2618352525821650401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: oddeyecircle_attack_34
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73d6982ab00e8cdd0800000000000000
-      internalID: -2465474455409169097
       vertices: []
       indices: 
       edges: []

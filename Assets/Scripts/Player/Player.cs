@@ -82,6 +82,12 @@ public class Player : MonoBehaviour {
     private void Start() {
         animator = GetComponent<Animator>();
 
+        Camera camera = Camera.main;
+        float halfHeight = camera.orthographicSize;
+        float halfWidth = camera.aspect * halfHeight;
+
+        transform.position = new Vector2(-halfWidth + (halfWidth / 3), transform.position.y);
+
         AttackPower = GameManager.Instance.Data.Stats.AttackPower;
         MaxHealth = GameManager.Instance.Data.Stats.MaxHealth;
         MaxMana = GameManager.Instance.Data.Stats.MaxMana;
