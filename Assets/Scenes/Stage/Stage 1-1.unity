@@ -2285,11 +2285,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8ad9d43df1ae94aa6dbb5794a83a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StageName: Stage 1-2
-  StageDistance: 100
+  StageName: Stage 1-1
+  StageDistance: 50
   EnemyLevel: 1
   Checkpoint:
-  - 0.5
+  - 0.4
+  - 0.8
   DistanceText: {fileID: 789454852}
   GoldText: {fileID: 28220384}
   bgmRunner: {fileID: 761350352}
