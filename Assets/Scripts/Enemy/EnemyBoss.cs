@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour {
+public class EnemyBoss : MonoBehaviour {
     #region attack
     public int BaseAttackPower;
     public float AttackMultipier;
@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour {
     #endregion
 
     #region health
-    private EnemyHealthBar healthBar;
+    // [SerializeField] private 
     public double BaseHealth;
     public float HealthMultiplier;
     private double _currentHealth;
@@ -23,7 +23,6 @@ public class Enemy : MonoBehaviour {
         get => _currentHealth;
         set {
             _currentHealth = value;
-            healthBar.SetHealth((int)_currentHealth, (int)MaxHealth);
         }
     }
     private double _maxHealth;
@@ -63,7 +62,7 @@ public class Enemy : MonoBehaviour {
     private double goldYield;
     #endregion
 
-    private Player player;
+    private PlayerBoss player;
     private BoxCollider2D box;
     private Rigidbody2D rb2d;
     private Animator animator;
@@ -77,13 +76,7 @@ public class Enemy : MonoBehaviour {
         animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         box = GetComponent<BoxCollider2D>();
-        healthBar = GetComponentInChildren<EnemyHealthBar>();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-
-        BoxCollider2D ground = GameObject.Find("Ground").GetComponent<BoxCollider2D>();
-        float groundTop = ground.transform.position.y + ground.size.y;
-
-        transform.position = new Vector2(transform.position.x, groundTop + (box.size.y * box.transform.localScale.y / 2));
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBoss>();
 
         int enemyLevel = StageManager.Instance.EnemyLevel;
 
@@ -91,8 +84,6 @@ public class Enemy : MonoBehaviour {
 
         _maxHealth = BaseHealth * Mathf.Pow(HealthMultiplier, enemyLevel);
         _currentHealth = _maxHealth;
-
-        healthBar.SetHealth((int)CurrentHealth, (int)MaxHealth);
     }
 
     private void FixedUpdate() {

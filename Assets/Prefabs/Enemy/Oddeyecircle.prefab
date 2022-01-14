@@ -407,12 +407,12 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &669195235050040146
 MonoBehaviour:
@@ -432,6 +432,8 @@ MonoBehaviour:
   AttackSpeed: 300
   BaseHealth: 100
   HealthMultiplier: 1.5
+  IsDead: 0
+  IsAttack: 0
   _movementSpeed: 250
   BaseGoldYield: 50
 --- !u!1 &669195235109807194

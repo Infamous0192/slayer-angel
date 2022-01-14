@@ -7083,18 +7083,16 @@ MonoBehaviour:
     - SceneName: Stage 1-1
       Name: Stage 1-1
       Title: Planet Utopia
-      Description: Once upon time, a mysterious portal appeared and terrible creatures
-        came out
+      Description: 
       Distance: 100
       Checkpoint: 0
       IsUnlocked: 1
       Reward:
       - {fileID: 3693651345976912356, guid: 8b230c470118edd4285737b4728093d6, type: 3}
-    - SceneName: Stage 1-2
-      Name: Stage 1-2
-      Title: Planet Utopia
-      Description: Once upon time, a mysterious portal appeared and terrible creatures
-        came out
+    - SceneName: Stage 2-1
+      Name: Stage 2-1
+      Title: Zombie Paradise
+      Description: 
       Distance: 150
       Checkpoint: 0
       IsUnlocked: 1
