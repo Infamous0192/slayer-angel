@@ -26,6 +26,9 @@ public class UIModeRunner : MonoBehaviour {
 
   // Start is called before the first frame update
   void Start() {
+    GameObject obj = GameObject.FindGameObjectWithTag("music");
+    Destroy(obj);
+
     btnBackStarship.onClick.AddListener(() => {
       promptExit.SetActive(true);
       promptOption.SetActive(false);

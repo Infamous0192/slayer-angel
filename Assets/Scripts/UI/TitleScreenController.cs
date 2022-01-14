@@ -10,6 +10,7 @@ public class TitleScreenController : MonoBehaviour {
   public Button btnQuit;
   public Button btnVolume;
   public Button btnBackToGame;
+  public Button btnCredits;
 
   public GameObject promptVolume;
 
@@ -32,6 +33,10 @@ public class TitleScreenController : MonoBehaviour {
 #if UNITY_EDITOR
       UnityEditor.EditorApplication.isPlaying = false;
 #endif
+    });
+
+    btnCredits.onClick.AddListener(() => {
+      SceneManager.LoadScene(7);
     });
 
   }
