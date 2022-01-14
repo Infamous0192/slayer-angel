@@ -47,6 +47,8 @@ public class UIModeRunner : MonoBehaviour {
       promptExit.SetActive(false);
     });
 
+    GameObject obj = GameObject.FindGameObjectWithTag("music");
+    Destroy(obj);
 
   }
 
