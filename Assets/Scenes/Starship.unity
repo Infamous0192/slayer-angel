@@ -6989,27 +6989,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c19c0ac3d487214d8a163712dabca48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stage:
-  - SceneName: Stage 1-1
-    Name: Stage 1-1
-    Title: Planet Utopia
-    Description: Once upon time, a mysterious portal appeared and terrible creatures
-      came out
-    Distance: 1000
-    Checkpoint: []
-    IsUnlocked: 1
-    Reward:
-    - {fileID: 3693651345976912356, guid: 8b230c470118edd4285737b4728093d6, type: 3}
-  - SceneName: Stage 1-2
-    Name: Stage 1-2
-    Title: Planet Utopia
-    Description: Once upon time, a mysterious portal appeared and terrible creatures
-      came out
-    Distance: 1000
-    Checkpoint: []
-    IsUnlocked: 1
-    Reward:
-    - {fileID: 3693651345976912356, guid: 8b230c470118edd4285737b4728093d6, type: 3}
   NameText: {fileID: 1902491968}
   TitleText: {fileID: 1045121330}
   DescriptionText: {fileID: 1973105953}
@@ -7107,8 +7086,7 @@ MonoBehaviour:
       Description: Once upon time, a mysterious portal appeared and terrible creatures
         came out
       Distance: 100
-      Checkpoint:
-      - 0.5
+      Checkpoint: 0
       IsUnlocked: 1
       Reward:
       - {fileID: 3693651345976912356, guid: 8b230c470118edd4285737b4728093d6, type: 3}
@@ -7118,7 +7096,7 @@ MonoBehaviour:
       Description: Once upon time, a mysterious portal appeared and terrible creatures
         came out
       Distance: 150
-      Checkpoint: []
+      Checkpoint: 0
       IsUnlocked: 1
       Reward:
       - {fileID: 3693651345976912356, guid: 8b230c470118edd4285737b4728093d6, type: 3}
